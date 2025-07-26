@@ -24,13 +24,15 @@ jobs:
     name: release
 
     steps:
-      - name: Checkout Commit
+      - name: Checkout Branch
         uses: actions/checkout@v4
         with:
-          fetch-depth: 100
+          fetch-depth: 0
           fetch-tags: true
+          # Note!!! This overrides whatever branch you select with workflow_dispatch. Comment this out to test with other branches.
           ref: main
 
+        # Just to be sure
       - name: Fetch Tags
         run: git fetch --tags
 
@@ -39,7 +41,7 @@ jobs:
           git config pull.rebase false
           git config --global user.email "release-workflow@caniemail.com"
           git config --global user.name "Release Workflow"
-          git remote set-url origin https://github.com/${{ github.repository }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Setup
         uses: ./.github/actions/setup

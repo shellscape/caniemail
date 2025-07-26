@@ -503,325 +503,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "<body> element",
         },
       ],
-      "outlook.ios" => [
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-      ],
-      "outlook.android" => [
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "none",
-          "title": "overflow",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "none",
-          "title": "<body> element",
-        },
-      ],
       "protonmail.desktop-webmail" => [
         {
           "notes": [],
@@ -1956,6 +1637,23 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "none",
           "title": "role attribute",
+        },
+      ],
+      "outlook.android" => [
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "none",
+          "title": "overflow",
         },
       ],
     },
@@ -7560,6 +7258,843 @@ exports[`check() file > fixture html file 1`] = `
           "title": "<body> element",
         },
       ],
+      "outlook.ios" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "outlook.android" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
       "hey.desktop-webmail" => [
         {
           "notes": [
@@ -9578,21 +10113,6 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
               "column": 24,
               "line": 368,
             },
@@ -9723,21 +10243,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
         },
         {
           "notes": [],
@@ -10006,263 +10511,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "align attribute",
-        },
-      ],
-      "outlook.ios" => [
-        {
-          "notes": [
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
         },
       ],
       "protonmail.desktop-webmail" => [
@@ -10718,21 +10966,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "font-size",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10883,21 +11116,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
         },
         {
           "notes": [],
@@ -11327,21 +11545,6 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
               "column": 24,
               "line": 368,
             },
@@ -11477,21 +11680,6 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "<hr> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
               "column": 28,
               "line": 347,
             },
@@ -11547,246 +11735,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "cellspacing attribute",
-        },
-      ],
-      "outlook.android" => [
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
         },
       ],
     },

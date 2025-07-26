@@ -1161,12 +1161,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/bimi/",
       },
       {
-        "notes": [],
-        "support": "full",
-        "title": "@media (orientation)",
-        "url": "https://www.caniemail.com/features/css-at-media-orientation/",
-      },
-      {
         "notes": [
           "Partial. Not supported with non Google accounts.",
           "Partial. Does not support height based media queries.",
@@ -2613,8 +2607,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-line-height/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Buggy. Does not work inline in the \`background-image\` property. (See [email-bugs#135](https://github.com/hteumeuleu/email-bugs/issues/135))",
+        ],
+        "support": "partial",
         "title": "linear-gradient()",
         "url": "https://www.caniemail.com/features/css-linear-gradient/",
       },
@@ -2729,8 +2725,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-pseudo-class-hover/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Buggy. Does not work inline in the \`background-image\` property. (See [email-bugs#135](https://github.com/hteumeuleu/email-bugs/issues/135))",
+        ],
+        "support": "partial",
         "title": "radial-gradient()",
         "url": "https://www.caniemail.com/features/css-radial-gradient/",
       },
@@ -7041,7 +7039,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -8466,7 +8464,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -8592,6 +8590,14 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [
+          "Buggy. Requires \`word-break:normal\` to reset Apple Mail default style (See [issue#394](https://github.com/hteumeuleu/caniemail/issues/394).)",
+        ],
+        "support": "partial",
+        "title": "overflow-wrap",
+        "url": "https://www.caniemail.com/features/css-overflow-wrap/",
+      },
+      {
+        "notes": [
           "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
         ],
         "support": "partial",
@@ -8631,6 +8637,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-position/",
       },
       {
+        "notes": [
+          "Partial. Supported with mouse clicks. Not supported with keyboard input.",
+        ],
+        "support": "partial",
+        "title": ":active",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-active/",
+      },
+      {
         "notes": [],
         "support": "full",
         "title": ":checked",
@@ -8647,6 +8661,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus/",
       },
       {
         "notes": [],
@@ -9809,8 +9829,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-at-media-hover/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. \`orientation:portrait\` is not supported.",
+        ],
+        "support": "partial",
         "title": "@media (orientation)",
         "url": "https://www.caniemail.com/features/css-at-media-orientation/",
       },
@@ -10250,7 +10272,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -10373,6 +10395,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "outline",
         "url": "https://www.caniemail.com/features/css-outline/",
+      },
+      {
+        "notes": [
+          "Buggy. Requires \`word-break:normal\` to reset Apple Mail default style (See [issue#394](https://github.com/hteumeuleu/caniemail/issues/394).)",
+        ],
+        "support": "partial",
+        "title": "overflow-wrap",
+        "url": "https://www.caniemail.com/features/css-overflow-wrap/",
       },
       {
         "notes": [
@@ -11940,7 +11970,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -13544,7 +13574,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -15065,8 +15095,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-justify-content/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. Percentages values are not supported.",
+        ],
+        "support": "partial",
         "title": "left, right, top, bottom",
         "url": "https://www.caniemail.com/features/css-left-right-top-bottom/",
       },
@@ -16816,7 +16848,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -18479,7 +18511,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -21876,6 +21908,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/html-blockquote/",
       },
       {
+        "notes": [
+          "Partial. Replaced by a \`<div>\` with supported attributes.",
+        ],
+        "support": "partial",
+        "title": "<body> element",
+        "url": "https://www.caniemail.com/features/html-body/",
+      },
+      {
         "notes": [],
         "support": "full",
         "title": "cellpadding attribute",
@@ -23086,6 +23126,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/html-blockquote/",
       },
       {
+        "notes": [
+          "Partial. Replaced by a \`<div>\` with supported attributes.",
+        ],
+        "support": "partial",
+        "title": "<body> element",
+        "url": "https://www.caniemail.com/features/html-body/",
+      },
+      {
         "notes": [],
         "support": "full",
         "title": "<button type="reset"> element",
@@ -23859,7 +23907,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -25189,7 +25237,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -26362,6 +26410,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-kerning",
+        "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -26513,7 +26567,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -26556,6 +26610,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "mix-blend-mode",
         "url": "https://www.caniemail.com/features/css-mix-blend-mode/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "CSS Nesting",
+        "url": "https://www.caniemail.com/features/css-nesting/",
       },
       {
         "notes": [],
@@ -28091,7 +28151,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -28351,7 +28411,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-line",
         "url": "https://www.caniemail.com/features/css-text-decoration-line/",
       },
@@ -28803,7 +28863,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<hr> element",
         "url": "https://www.caniemail.com/features/html-hr/",
       },
@@ -29511,7 +29571,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -29757,7 +29817,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-line",
         "url": "https://www.caniemail.com/features/css-text-decoration-line/",
       },
@@ -30181,7 +30241,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<hr> element",
         "url": "https://www.caniemail.com/features/html-hr/",
       },
@@ -30873,7 +30933,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -31281,7 +31341,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-line",
         "url": "https://www.caniemail.com/features/css-text-decoration-line/",
       },
@@ -31709,7 +31769,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<hr> element",
         "url": "https://www.caniemail.com/features/html-hr/",
       },
@@ -33332,14 +33392,6 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [
-          "Buggy. Replaces \`height\` by \`min-height\`.",
-        ],
-        "support": "full",
-        "title": "height property",
-        "url": "https://www.caniemail.com/features/css-height/",
-      },
-      {
-        "notes": [
           "Partial. Removed if there is no space before when used with a \`background-image\` property. (See [email-bugs#16](https://github.com/hteumeuleu/email-bugs/issues/16))",
         ],
         "support": "partial",
@@ -34480,7 +34532,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -35643,7 +35695,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -36808,7 +36860,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "full",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -37851,14 +37903,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-font/",
       },
       {
-        "notes": [
-          "Buggy. Replaces \`height\` by \`min-height\`.",
-        ],
-        "support": "full",
-        "title": "height property",
-        "url": "https://www.caniemail.com/features/css-height/",
-      },
-      {
         "notes": [],
         "support": "partial",
         "title": "hyphens",
@@ -38887,14 +38931,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "light-dark()",
         "url": "https://www.caniemail.com/features/css-function-light-dark/",
-      },
-      {
-        "notes": [
-          "Buggy. Replaces \`height\` by \`min-height\`.",
-        ],
-        "support": "full",
-        "title": "height property",
-        "url": "https://www.caniemail.com/features/css-height/",
       },
       {
         "notes": [],
@@ -40708,24 +40744,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "overflow-wrap",
-        "url": "https://www.caniemail.com/features/css-overflow-wrap/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": ":active",
-        "url": "https://www.caniemail.com/features/css-pseudo-class-active/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": ":focus",
-        "url": "https://www.caniemail.com/features/css-pseudo-class-focus/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": ":target",
         "url": "https://www.caniemail.com/features/css-pseudo-class-target/",
       },
@@ -40768,12 +40786,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "inline-size ",
         "url": "https://www.caniemail.com/features/css-inline-size/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "overflow-wrap",
-        "url": "https://www.caniemail.com/features/css-overflow-wrap/",
       },
       {
         "notes": [],
@@ -41119,7 +41131,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -44171,7 +44183,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -45441,7 +45453,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -46433,7 +46445,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -46845,7 +46857,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -47160,12 +47172,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "<body> element",
-        "url": "https://www.caniemail.com/features/html-body/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "<button type="reset"> element",
         "url": "https://www.caniemail.com/features/html-button-reset/",
       },
@@ -47473,7 +47479,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -47792,12 +47798,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "<bdi> element",
         "url": "https://www.caniemail.com/features/html-bdi/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "<body> element",
-        "url": "https://www.caniemail.com/features/html-body/",
       },
       {
         "notes": [],
@@ -48176,6 +48176,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-grid-template/",
       },
       {
+        "notes": [
+          "Buggy. Replaces \`height\` by \`min-height\`.",
+        ],
+        "support": "none",
+        "title": "height property",
+        "url": "https://www.caniemail.com/features/css-height/",
+      },
+      {
         "notes": [],
         "support": "none",
         "title": "hyphenate-character",
@@ -48245,7 +48253,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -49051,6 +49059,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-grid-template/",
       },
       {
+        "notes": [
+          "Buggy. Replaces \`height\` by \`min-height\`.",
+        ],
+        "support": "none",
+        "title": "height property",
+        "url": "https://www.caniemail.com/features/css-height/",
+      },
+      {
         "notes": [],
         "support": "none",
         "title": "hyphenate-character",
@@ -49114,7 +49130,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -49887,6 +49903,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-grid-template/",
       },
       {
+        "notes": [
+          "Buggy. Replaces \`height\` by \`min-height\`.",
+        ],
+        "support": "none",
+        "title": "height property",
+        "url": "https://www.caniemail.com/features/css-height/",
+      },
+      {
         "notes": [],
         "support": "none",
         "title": "hyphenate-character",
@@ -49950,7 +49974,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -50574,7 +50598,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -51917,12 +51941,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "lch(), oklch(), lab(), oklab()",
         "url": "https://www.caniemail.com/features/css-modern-color/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "CSS Nesting",
-        "url": "https://www.caniemail.com/features/css-nesting/",
       },
       {
         "notes": [],
@@ -54718,7 +54736,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -55323,6 +55341,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": "@media (orientation)",
+        "url": "https://www.caniemail.com/features/css-at-media-orientation/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": "@media (prefers-color-scheme)",
         "url": "https://www.caniemail.com/features/css-at-media-prefers-color-scheme/",
       },
@@ -55492,7 +55516,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -56283,7 +56307,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -57112,7 +57136,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -57972,7 +57996,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
@@ -58860,7 +58884,7 @@ exports[`all features > getAllFeatures() 2`] = `
         "notes": [],
         "support": "none",
         "title": "margin-inline & margin-block",
-        "url": "https://www.caniemail.com/features/css-margin-inline/",
+        "url": "https://www.caniemail.com/features/css-margin-inline-block/",
       },
       {
         "notes": [],
