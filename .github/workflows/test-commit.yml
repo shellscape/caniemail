@@ -1,0 +1,53 @@
+name: Release Projects
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    tags-ignore:
+      - '*-v*'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  release:
+    if: |
+      !startsWith(github.event.head_commit.message, 'chore(release):') &&
+      !startsWith(github.event.head_commit.message, 'chore(repo):')
+
+    runs-on: ubuntu-latest
+
+    name: release
+
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          # Note!!! This overrides whatever branch you select with workflow_dispatch. Comment this out to test with other branches.
+          ref: main
+          token: ${{ secrets.GH_RELEASE_TOKEN }}
+
+        # Just to be sure
+      - name: Fetch Tags
+        run: git fetch --tags
+
+      - name: Set Git Config
+        run: |
+          git config pull.rebase false
+          git config --global user.email "release-workflow@caniemail.com"
+          git config --global user.name "Release Workflow"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_RELEASE_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Test Commit Permissions
+        run: |
+          git config --global user.email
+          git config --global user.name
+          git remote get-url origin
+          git commit -am "chore(repo): test commit from workflow" --allow-empty
+          git push
