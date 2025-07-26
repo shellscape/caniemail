@@ -1,6 +1,6 @@
 {
   "name": "caniemail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTML and CSS Feature Support for Email Clients from caniemail.com",
   "license": "MIT",
   "repository": "avigoldman/caniemail",
@@ -26,7 +26,7 @@
     "prepare": "husky",
     "prepublishOnly": "pnpm build",
     "pretest": "pnpm build",
-    "release": "versioner --no-commit-scopes --target $(pwd) --dry",
+    "release": "versioner --no-commit-scopes --target $(pwd) --no-publish --dry",
     "test": "vitest run --config ./vitest.config.ts",
     "typecheck": "tsc --noEmit"
   },

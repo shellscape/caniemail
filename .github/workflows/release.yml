@@ -42,7 +42,7 @@ jobs:
           git config pull.rebase false
           git config --global user.email "release-workflow@caniemail.com"
           git config --global user.name "Release Workflow"
-          git remote set-url origin https://github.com/${{ github.repository }}
+          git remote set-url origin https://x-access-token:${{ secrets.GH_RELEASE_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Setup
         uses: ./.github/actions/setup
