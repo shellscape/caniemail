@@ -49,8 +49,8 @@ importers:
         specifier: ^1.0.61
         version: 1.0.61
       '@dot/versioner':
-        specifier: ^0.4.0
-        version: 0.4.0
+        specifier: ^0.4.2
+        version: 0.4.2
       '@tunnel/tun':
         specifier: ^0.3.6
         version: 0.3.6
@@ -104,10 +104,6 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  '@babel/code-frame@7.26.0':
-    resolution: {integrity: sha512-INCKxTtbXtcNbUZ3YXutwMpEleqttcswhAdee7dhuoVrD2cnuc3PqtERBtxkX5nziX9vnBL8WXmSGwv8CuPV6g==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
     engines: {node: '>=6.9.0'}
@@ -145,8 +141,8 @@ packages:
     resolution: {integrity: sha512-ECraEVJWv2f2mWK93lYiefUkphStVlKD6yKDzisuoEmxuLKrxO9iGetHK2DoEAkj7sxjE886n0OUVVCUx0YPNg==}
     engines: {node: '>=18'}
 
-  '@dot/versioner@0.4.0':
-    resolution: {integrity: sha512-PWlX23Xi2LEDy5/WWxxQmmavhhOjfnj8wK4kxQNPsIiwpuBzBOLKOao3oqdiQ4/f+NapQaowmIDrnFnlPKgpMA==}
+  '@dot/versioner@0.4.2':
+    resolution: {integrity: sha512-4P79BJ30WmHm4J2ZfAT7bRBgVFmzoNHoxyvc+dguL/k2k/+iFVXrUxDhxAsyNbYw1iixuBb5MiuQTfR7l3NvhQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1843,12 +1839,6 @@ snapshots:
       '@img/sharp-linux-x64': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
 
-  '@babel/code-frame@7.26.0':
-    dependencies:
-      '@babel/helper-validator-identifier': 7.25.9
-      js-tokens: 4.0.0
-      picocolors: 1.1.1
-
   '@babel/code-frame@7.26.2':
     dependencies:
       '@babel/helper-validator-identifier': 7.25.9
@@ -1900,7 +1890,7 @@ snapshots:
       loglevelnext: 6.0.0
       p-defer: 3.0.0
 
-  '@dot/versioner@0.4.0':
+  '@dot/versioner@0.4.2':
     dependencies:
       '@dot/log': 0.1.5
       chalk: 4.1.2
@@ -2928,7 +2918,7 @@ snapshots:
 
   parse-json@5.2.0:
     dependencies:
-      '@babel/code-frame': 7.26.0
+      '@babel/code-frame': 7.26.2
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
