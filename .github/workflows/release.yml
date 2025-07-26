@@ -30,7 +30,6 @@ jobs:
           fetch-depth: 100
           fetch-tags: true
           ref: main
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Fetch Tags
         run: git fetch --tags
@@ -45,8 +44,10 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Build
-        run: pnpm build
+      - name: Build and Test
+        run: |
+          pnpm build
+          pnpm test
 
       - name: Release
         run: pnpm release

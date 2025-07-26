@@ -11,18 +11,25 @@ if [[ ! $API_VERSION =~ ^1\. ]]; then
 fi
 
 parse_date() {
-  date -u -d "$1" +%s
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS date command
+    date -j -f "%Y-%m-%dT%H:%M:%S" "$1" +%s 2>/dev/null || date -j -f "%Y-%m-%d %H:%M:%S" "$1" +%s 2>/dev/null || date -j -f "%Y-%m-%d" "$1" +%s
+  else
+    # GNU date (Linux)
+    date -u -d "$1" +%s
+  fi
 }
 
 REMOTE_DATE=$(jq -r '.last_update_date' "$TEMP_FILE")
-LOCAL_DATE=$(jq -r '.last_update_date' src/data/caniemail.json)
+LOCAL_DATE=$(jq -r '.last_update_date' data/caniemail.json)
 REMOTE_TIMESTAMP=$(parse_date "$REMOTE_DATE")
 LOCAL_TIMESTAMP=$(parse_date "$LOCAL_DATE")
 
 if [ "$REMOTE_TIMESTAMP" -gt "$LOCAL_TIMESTAMP" ]; then
-  cp "$TEMP_FILE" src/data/caniemail.json
-  pnpm test
-  git src/add data/caniemail.json
+  cp "$TEMP_FILE" data/caniemail.json
+  # We'll do this pre-release
+  # pnpm test
+  git add data/caniemail.json
   git commit -m "chore: update caniemail.json"
   git push
 fi

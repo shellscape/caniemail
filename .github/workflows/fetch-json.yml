@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 jobs:
-  publish-npm:
+  fetch-json:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Commit
@@ -13,10 +13,17 @@ jobs:
         with:
           fetch-depth: 10
 
-      - name: Checkout Main
+      - name: Set Git Config
         run: |
-          git fetch origin
-          git branch -f main origin/main
+          git config pull.rebase false
+          git config --global user.email "fetch-workflow@caniemail.com"
+          git config --global user.name "Fetch Workflow"
+          git remote set-url origin https://github.com/${{ github.repository }}
+
+      # - name: Checkout Main
+      #   run: |
+      #     git fetch origin
+      #     git branch -f main origin/main
 
       - name: Setup
         uses: ./.github/actions/setup
