@@ -1,12 +1,7 @@
-name: Release Projects
+name: Test Commit
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    tags-ignore:
-      - '*-v*'
 
 permissions:
   contents: read
@@ -14,14 +9,14 @@ permissions:
   id-token: write
 
 jobs:
-  release:
+  test-commit:
     if: |
       !startsWith(github.event.head_commit.message, 'chore(release):') &&
       !startsWith(github.event.head_commit.message, 'chore(repo):')
 
     runs-on: ubuntu-latest
 
-    name: release
+    name: test-commit
 
     steps:
       - name: Checkout Branch
@@ -44,22 +39,10 @@ jobs:
           git config --global user.name "Release Workflow"
           git remote set-url origin https://x-access-token:${{ secrets.GH_RELEASE_TOKEN }}@github.com/${{ github.repository }}
 
-      - name: Setup
-        uses: ./.github/actions/setup
-
-      - name: Build and Test
-        run: |
-          pnpm build
-          pnpm test
-
-      - name: Release
+      - name: Test Commit Permissions
         run: |
           git config --global user.email
           git config --global user.name
           git remote get-url origin
           git commit -am "chore(repo): test commit from workflow" --allow-empty
           git push origin HEAD:main
-          pnpm release
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
