@@ -1,6 +1,6 @@
 {
 	"api_version":"1.0.4",
-	"last_update_date":"2025-08-10 15:50:02 +0000",
+	"last_update_date":"2025-08-12 07:06:29 +0000",
 	"nicenames":{"family":{"gmail":"Gmail","outlook":"Outlook","yahoo":"Yahoo! Mail","apple-mail":"Apple Mail","aol":"AOL","thunderbird":"Mozilla Thunderbird","microsoft":"Microsoft","samsung-email":"Samsung Email","sfr":"SFR","orange":"Orange","protonmail":"ProtonMail","hey":"HEY","mail-ru":"Mail.ru","fastmail":"Fastmail","laposte":"LaPoste.net","t-online-de":"T-online.de","free-fr":"Free.fr","gmx":"GMX","web-de":"WEB.DE","ionos-1and1":"1&1","rainloop":"RainLoop","wp-pl":"WP.pl"},"platform":{"desktop-app":"Desktop","desktop-webmail":"Desktop Webmail","mobile-webmail":"Mobile Webmail","webmail":"Webmail","ios":"iOS","android":"Android","windows":"Windows","macos":"macOS","windows-mail":"Windows Mail","outlook-com":"Outlook.com"},"support":{"supported":"Supported","mitigated":"Partially supported","unsupported":"Not supported","unknown":"Support unknown","mixed":"Mixed support"},"category":{"html":"HTML","css":"CSS","image":"Image formats","others":"Others"}},
 	"data":[
 		{
@@ -212,19 +212,19 @@
 		},
 	
 		{
-			"slug":null,
-			"title":null,
-			"description":null,
+			"slug":"css-at-media-prefers-reduced-motion",
+			"title":"@media (prefers-reduced-motion)",
+			"description":"",
 			"url":"https://www.caniemail.com/features/css-at-media-prefers-reduced-motion/",
-			"category":null,
-			"tags":null,
-			"keywords":null,
-			"last_test_date":null,
-			"test_url":"https://www.caniemail.com",
-			"test_results_url":null,
-			"stats":null,
+			"category":"css",
+			"tags":["accessibility","performance"],
+			"keywords":"media queries, media query, media feature, prefers-reduced-motion, animation, accessibility",
+			"last_test_date":"2021-02-20",
+			"test_url":"https://www.caniemail.com/tests/css-media-prefers-reduced-motion.html",
+			"test_results_url":"https://testi.at/proj/e3GT3l1CxqBUoE3u9keC4WLf5",
+			"stats":{"apple-mail":{"macos":{"11":"y","12":"y","13":"y"},"ios":{"11":"y","12":"y","13":"y","14":"y"}},"gmail":{"desktop-webmail":{"2020-12":"n"},"ios":{"2020-12":"n"},"android":{"2020-12":"n"},"mobile-webmail":{"2020-12":"n"}},"orange":{"desktop-webmail":{"2021-02":"y","2021-03":"y"},"ios":{"2021-02":"y"},"android":{"2021-02":"y"}},"outlook":{"windows":{"2007":"n","2010":"n","2013":"n","2016":"n","2019":"n"},"windows-mail":{"16005.13426.20316.0":"n"},"macos":{"2020-12":"y","16.80":"y"},"outlook-com":{"2020-12":"y"},"ios":{"2020-12":"y"},"android":{"4.2048.4":"y"}},"yahoo":{"desktop-webmail":{"2020-12":"n"},"ios":{"2021-02":"n"},"android":{"6.16.2.1519779":"n"}},"aol":{"desktop-webmail":{"2020-12":"n"},"ios":{"2021-02":"n"},"android":{"2021-02":"n"}},"samsung-email":{"android":{"6.1.31.2":"y"}},"sfr":{"desktop-webmail":{"2021-02":"y"},"ios":{"2021-02":"n"},"android":{"2021-02":"n"}},"thunderbird":{"macos":{"78.7":"n"}},"protonmail":{"desktop-webmail":{"2021-02":"a #2"},"ios":{"2021-02":"a #2"},"android":{"2021-02":"a #2"}},"hey":{"desktop-webmail":{"2021-02":"y"}},"mail-ru":{"desktop-webmail":{"2021-02":"n"}},"fastmail":{"desktop-webmail":{"2021-07":"n #1"}},"laposte":{"desktop-webmail":{"2021-08":"y","2025-07":"n"}},"gmx":{"desktop-webmail":{"2022-06":"n"},"ios":{"2022-06":"y"},"android":{"2022-06":"y"}},"web-de":{"desktop-webmail":{"2022-06":"n"},"ios":{"2022-06":"y"},"android":{"2022-06":"y"}},"ionos-1and1":{"desktop-webmail":{"2022-06":"y"},"android":{"2022-06":"y"}}},
 			"notes":null,
-			"notes_by_num":null
+			"notes_by_num":{"1":"Not supported. `@media (prefers-reduced-motion:reduce)` is transformed into `@media none`.","2":"Partially supported. Not supported on `picture`."}
 		},
 	
 		{
@@ -3348,19 +3348,19 @@
 		},
 	
 		{
-			"slug":null,
-			"title":null,
-			"description":null,
+			"slug":"css-word-wrap",
+			"title":"word-wrap",
+			"description":"The word-wrap CSS property (now standardized as overflow-wrap) controls whether the browser should break words to prevent them from overflowing their container. When set to break-word, it forces otherwise unbreakable strings to wrap onto the next line to avoid layout issues.",
 			"url":"https://www.caniemail.com/features/css-word-wrap/",
-			"category":null,
-			"tags":null,
-			"keywords":null,
-			"last_test_date":null,
-			"test_url":"https://www.caniemail.com",
-			"test_results_url":null,
-			"stats":null,
+			"category":"css",
+			"tags":[],
+			"keywords":"word-wrap, word-break, overflow-wrap",
+			"last_test_date":"2025-05-08",
+			"test_url":"https://www.caniemail.com/tests/css-word-wrap.html",
+			"test_results_url":"https://app.emailonacid.com/app/acidtest/vCaPUwbCjmYsdRJi38QdpqJSetV5X7wBQh5iymp8t1Sty/list",
+			"stats":{"apple-mail":{"macos":{"16":"y"},"ios":{"16":"y"}},"gmail":{"desktop-webmail":{"2025-05":"a #1"},"android":{"2025-05":"a #1"}},"outlook":{"windows":{"2016":"n #2","2019":"n #2","2021":"n #2"},"windows-mail":{"2025-05":"n"},"outlook-com":{"2022-05":"y #3"},"ios":{"2025-05":"y #3"},"android":{"2025-05":"n"}},"yahoo":{"desktop-webmail":{"2025-05":"y"}}},
 			"notes":null,
-			"notes_by_num":null
+			"notes_by_num":{"1":"Applies `word-wrap: break-word` to all items.","2":"Does not honor any wrapping, including `word-wrap`, `overflow-wrap`, and `word-break`. Using an equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together) does not work.","3":"Supports both `word-wrap` and equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together)"}
 		},
 	
 		{
