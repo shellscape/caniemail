@@ -3,9 +3,9 @@
   "version": "1.0.4",
   "description": "HTML and CSS Feature Support for Email Clients from caniemail.com",
   "license": "MIT",
-  "repository": "avigoldman/caniemail",
+  "repository": "shellscape/caniemail",
   "author": "Andrew Powell <andrew@shellscape.org>",
-  "homepage": "https://github.com/avigoldman/caniemail#README",
+  "homepage": "https://github.com/shellscape/caniemail#README",
   "type": "module",
   "exports": {
     "./caniemail.json": "./data/caniemail.json",
@@ -26,7 +26,7 @@
     "prepare": "husky",
     "prepublishOnly": "pnpm build",
     "pretest": "pnpm build",
-    "release": "versioner --no-commit-scopes --target $(pwd) --dry",
+    "release": "versioner --no-commit-scopes --target $(pwd)",
     "test": "vitest run --config ./vitest.config.ts",
     "typecheck": "tsc --noEmit"
   },
