@@ -16,6 +16,7 @@ jobs:
       - name: Set Git Config
         run: |
           git config pull.rebase false
+          git config push.autosetupremote true
           git config --global user.email "fetch-workflow@caniemail.com"
           git config --global user.name "Fetch Workflow"
           git remote set-url origin https://github.com/${{ github.repository }}
@@ -30,3 +31,6 @@ jobs:
 
       - name: Fetch
         run: ./scripts/update-data.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
