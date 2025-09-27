@@ -66,6 +66,7 @@ exports[`css > propertyTitles 1`] = `
   "clear",
   "clip-path",
   "column-count",
+  "cursor",
   "direction",
   "display",
   "empty-cells",
@@ -147,6 +148,7 @@ exports[`css > propertyTitles 1`] = `
   "width property",
   "word-break",
   "word-spacing",
+  "word-wrap",
   "writing-mode",
   "z-index",
 ]

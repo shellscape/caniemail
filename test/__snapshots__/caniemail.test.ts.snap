@@ -1639,23 +1639,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "role attribute",
         },
       ],
-      "outlook.android" => [
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "none",
-          "title": "overflow",
-        },
-      ],
     },
     "warnings": Map {
       "gmail.mobile-webmail" => [
@@ -6613,6 +6596,7 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Buggy. Cannot scroll through to hidden content.",
             "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
           ],
           "position": {
@@ -7702,6 +7686,24 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Buggy. Cannot scroll through to hidden content.",
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
         },
         {
           "notes": [
@@ -9744,6 +9746,23 @@ exports[`check() file > fixture html file 1`] = `
           "title": "max-width",
         },
         {
+          "notes": [
+            "Partial. Support for \`overflow-block\` & \`overflow-inline\` depends on browser support.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
           "notes": [],
           "position": {
             "end": {
@@ -10516,6 +10535,23 @@ exports[`check() file > fixture html file 1`] = `
       "protonmail.desktop-webmail" => [
         {
           "notes": [
+            "Partial. Support for \`overflow-block\` & \`overflow-inline\` depends on browser support.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
           "position": {
@@ -11196,6 +11232,24 @@ exports[`check() file > fixture html file 1`] = `
         },
       ],
       "protonmail.android" => [
+        {
+          "notes": [
+            "Buggy. Cannot scroll through to hidden content.",
+            "Partial. Support for \`overflow-block\` & \`overflow-inline\` depends on browser support.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
         {
           "notes": [],
           "position": {
