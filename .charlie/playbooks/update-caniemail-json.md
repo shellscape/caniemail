@@ -59,18 +59,35 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    fi
    ```
 
-2. If `remote_ts <= local_ts`, exit cleanly (no-op).
+2. If step 1 exits early (because the remote revision isn’t newer), exit cleanly (no-op).
 
 3. Create a deterministic branch name for the revision, and avoid duplicates.
 
    ```bash
    branch="chore/data-update/$remote_ts"
 
+   # Derive <owner>/<repo> from origin for gh --repo.
    origin_url="$(git remote get-url origin)"
    repo="$origin_url"
    repo="${repo#https://github.com/}"
+   repo="${repo#ssh://git@github.com/}"
    repo="${repo#git@github.com:}"
    repo="${repo%.git}"
+
+   case "$repo" in
+     */*) ;;
+     *)
+       echo "Unable to derive GitHub repo from origin URL: $origin_url" >&2
+       exit 1
+       ;;
+   esac
+
+   case "$repo" in
+     *://*|*@*)
+       echo "Unable to derive GitHub repo from origin URL: $origin_url" >&2
+       exit 1
+       ;;
+   esac
 
    # If the branch already exists remotely, no-op.
    if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
