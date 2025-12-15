@@ -66,16 +66,22 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    ```bash
    branch="chore/data-update/$remote_ts"
 
+   origin_url="$(git remote get-url origin)"
+   repo="$origin_url"
+   repo="${repo#https://github.com/}"
+   repo="${repo#git@github.com:}"
+   repo="${repo%.git}"
+
    # If the branch already exists remotely, no-op.
    if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
      echo "Branch already exists: $branch"
      exit 0
    fi
 
-   # If an open PR already exists for this revision, no-op.
-   open_pr_count="$(gh pr list --state open --head "$branch" --json number --jq 'length')"
+   # If an open PR already exists for this branch, no-op.
+   open_pr_count="$(gh pr list --repo "$repo" --state open --head "$branch" --json number --jq 'length')"
    if [ "$open_pr_count" -gt 0 ]; then
-     echo "Open PR already exists for revision: $remote_date"
+     echo "Open PR already exists for branch: $branch"
      exit 0
    fi
    ```
@@ -163,7 +169,7 @@ Updated data/caniemail.json to remote last_update_date: ${remote_date}.
 EOF
 )"
 
-   gh pr create --title "chore: update caniemail.json for revision ${remote_date}" --body "$body" --base main
+   gh pr create --repo "$repo" --title "chore: update caniemail.json for revision ${remote_date}" --body "$body" --base main
    ```
 
 ## Rollback
