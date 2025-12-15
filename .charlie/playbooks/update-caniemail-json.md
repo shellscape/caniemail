@@ -2,7 +2,7 @@
 
 ## Overview
 
-Intended schedule: run daily at 12:00.
+Intended schedule: run daily at 12:00 (time-of-day not enforced by this repo).
 
 Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If there’s an update, open a PR with the refreshed `data/caniemail.json` (and snapshots only when failures are snapshot-only).
 
@@ -27,11 +27,22 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    tmp_json="$(mktemp)"
    curl -fsSL 'https://www.caniemail.com/api/data.json' > "$tmp_json"
 
-   remote_date="$(jq -r '.last_update_date' "$tmp_json")"
-   local_date="$(jq -r '.last_update_date' data/caniemail.json)"
+   remote_date="$(jq -r '.last_update_date // empty' "$tmp_json")"
+   local_date="$(jq -r '.last_update_date // empty' data/caniemail.json)"
 
-   remote_ts="$(date -u -d "$remote_date" +%s)"
-   local_ts="$(date -u -d "$local_date" +%s)"
+   if [ -z "$remote_date" ] || [ -z "$local_date" ]; then
+     echo "Missing last_update_date (remote='$remote_date' local='$local_date')" >&2
+     exit 1
+   fi
+
+   remote_ts="$(node -e 'const ms = Date.parse(process.argv[1]); if (!Number.isFinite(ms)) process.exit(1); console.log(Math.floor(ms / 1000));' "$remote_date")" || {
+     echo "Unable to parse remote last_update_date: '$remote_date'" >&2
+     exit 1
+   }
+   local_ts="$(node -e 'const ms = Date.parse(process.argv[1]); if (!Number.isFinite(ms)) process.exit(1); console.log(Math.floor(ms / 1000));' "$local_date")" || {
+     echo "Unable to parse local last_update_date: '$local_date'" >&2
+     exit 1
+   }
    echo "remote=$remote_date ($remote_ts) local=$local_date ($local_ts)"
    ```
 
