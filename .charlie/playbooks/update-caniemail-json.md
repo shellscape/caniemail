@@ -52,6 +52,11 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
      exit 1
    }
    echo "remote=$remote_date ($remote_ts) local=$local_date ($local_ts)"
+
+   if [ "$remote_ts" -le "$local_ts" ]; then
+     echo "No update needed: remote_ts ($remote_ts) <= local_ts ($local_ts)"
+     exit 0
+   fi
    ```
 
 2. If `remote_ts <= local_ts`, exit cleanly (no-op).
