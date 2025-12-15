@@ -6,6 +6,8 @@ Intended schedule: run daily at 12:00 (time-of-day not enforced by this repo).
 
 Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If there’s an update, open a PR with the refreshed `data/caniemail.json` (and snapshots only when failures are snapshot-only).
 
+This playbook assumes `origin` points at GitHub (github.com) and that `gh` is authenticated for the repo.
+
 ## Creates
 
 - Artifact: Pull request (max 1 per run)
@@ -59,14 +61,14 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    fi
    ```
 
-2. If step 1 exits early (because the remote revision isn’t newer), exit cleanly (no-op).
+2. The script in step 1 exits cleanly (no-op) if the remote revision isn’t newer than the local one; otherwise continue.
 
 3. Create a deterministic branch name for the revision, and avoid duplicates.
 
    ```bash
    branch="chore/data-update/$remote_ts"
 
-   # Derive <owner>/<repo> from origin for gh --repo.
+   # Derive <owner>/<repo> from origin for gh --repo. Assumes origin is GitHub (github.com).
    origin_url="$(git remote get-url origin)"
    repo="$origin_url"
    repo="${repo#https://github.com/}"
@@ -96,6 +98,7 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    fi
 
    # If an open PR already exists for this branch, no-op.
+   # Requires $repo to be a valid owner/repo derived from origin.
    open_pr_count="$(gh pr list --repo "$repo" --state open --head "$branch" --json number --jq 'length')"
    if [ "$open_pr_count" -gt 0 ]; then
      echo "Open PR already exists for branch: $branch"
