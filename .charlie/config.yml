@@ -1,0 +1,11 @@
+checkCommands:
+  fix: pnpm format && pnpm lint
+  lint: pnpm lint
+  types: pnpm typecheck
+  test: pnpm test
+
+# Proactive behaviors currently run once per day (beta; schedule controlled by Charlie).
+# This playbook is intended to keep `data/caniemail.json` in sync with caniemail.com (time-of-day not enforced by this repo).
+beta:
+  proactive:
+    - playbook: '.charlie/playbooks/update-caniemail-json.md'
