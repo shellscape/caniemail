@@ -25,6 +25,9 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    ```bash
    set -euo pipefail
    tmp_json="$(mktemp)"
+   cleanup() { rm -f "$tmp_json"; }
+   trap cleanup EXIT
+
    curl -fsSL 'https://www.caniemail.com/api/data.json' > "$tmp_json"
 
    remote_date="$(jq -r '.last_update_date // empty' "$tmp_json")"
@@ -60,7 +63,7 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    fi
 
    # If an open PR already exists for this revision, no-op.
-   open_pr_count="$(gh pr list --state open --search "${remote_date}" --json title --jq 'length')"
+   open_pr_count="$(gh pr list --state open --head "$branch" --json number --jq 'length')"
    if [ "$open_pr_count" -gt 0 ]; then
      echo "Open PR already exists for revision: $remote_date"
      exit 0
@@ -72,12 +75,13 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    ```bash
    git checkout -b "$branch"
    cp "$tmp_json" data/caniemail.json
-   rm "$tmp_json"
    ```
 
 5. Run tests once (do not update snapshots yet).
 
    ```bash
+   snapshots_updated=false
+
    set +e
    pnpm test
    test_exit=$?
@@ -95,13 +99,19 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    if [ "$test_exit" -ne 0 ]; then
      pnpm test -- --update || true
 
+     if [ -n "$(git status --porcelain -- test/__snapshots__)" ]; then
+       snapshots_updated=true
+     fi
+
      set +e
      pnpm test
      post_update_exit=$?
      set -e
 
      if [ "$post_update_exit" -ne 0 ]; then
+       snapshots_updated=false
        git restore --staged --worktree test/__snapshots__ || true
+       git clean -fd -- test/__snapshots__ || true
      fi
    fi
    ```
@@ -109,7 +119,12 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
 7. Commit the changes and push the branch.
 
    ```bash
-   git add data/caniemail.json test/__snapshots__
+   git add data/caniemail.json
+
+   if [ -n "$(git status --porcelain -- test/__snapshots__)" ]; then
+     git add test/__snapshots__
+   fi
+
    git commit -m "chore: update caniemail.json for revision ${remote_date}"
    git push -u origin "$branch"
    ```
@@ -121,7 +136,20 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
      - Whether snapshots were updated
      - If tests are failing after the snapshot check: explicitly note that failures are _not_ snapshot-only and need maintainer review
    ```bash
-   gh pr create --title "chore: update caniemail.json for revision ${remote_date}" --body "Closes #3" --base main
+   test_status="passed"
+   if [ "$test_exit" -ne 0 ] && [ "${post_update_exit:-1}" -ne 0 ]; then
+     test_status="failed (non-snapshot failures; needs maintainer review)"
+   fi
+
+   body="$(cat <<EOF
+Updated data/caniemail.json to remote last_update_date: ${remote_date}.
+
+- Tests: ${test_status}
+- Snapshots updated: ${snapshots_updated}
+EOF
+)"
+
+   gh pr create --title "chore: update caniemail.json for revision ${remote_date}" --body "$body" --base main
    ```
 
 ## Rollback
