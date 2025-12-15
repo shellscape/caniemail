@@ -1054,6 +1054,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Not supported inside the \`<body>\`.",
+          "The size of the \`<style>\` tag [is limited to 16 KB](https://github.com/hteumeuleu/email-bugs/issues/90)",
         ],
         "support": "partial",
         "title": "<style> element",
@@ -4885,10 +4886,8 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-max-height/",
       },
       {
-        "notes": [
-          "Partial. Doesn't work on \`<table>\` elements, as per [CSS 2.1 specification](https://www.w3.org/TR/CSS2/visudet.html#min-max-widths).",
-        ],
-        "support": "partial",
+        "notes": [],
+        "support": "full",
         "title": "max-width",
         "url": "https://www.caniemail.com/features/css-max-width/",
       },
@@ -27583,7 +27582,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-collapse",
         "url": "https://www.caniemail.com/features/css-border-collapse/",
       },
@@ -27625,7 +27624,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-spacing",
         "url": "https://www.caniemail.com/features/css-border-spacing/",
       },
@@ -27735,7 +27734,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -27762,6 +27761,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-kerning",
+        "url": "https://www.caniemail.com/features/css-font-kerning/",
       },
       {
         "notes": [],
@@ -28199,9 +28204,15 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "table-layout",
         "url": "https://www.caniemail.com/features/css-table-layout/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "text-align-last",
+        "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
         "notes": [],
@@ -28229,7 +28240,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-style",
         "url": "https://www.caniemail.com/features/css-text-decoration-style/",
       },
@@ -28505,7 +28516,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<acronym> element",
         "url": "https://www.caniemail.com/features/html-acronym/",
       },
@@ -29041,7 +29052,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-collapse",
         "url": "https://www.caniemail.com/features/css-border-collapse/",
       },
@@ -29083,7 +29094,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-spacing",
         "url": "https://www.caniemail.com/features/css-border-spacing/",
       },
@@ -29185,7 +29196,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -29212,6 +29223,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-kerning",
+        "url": "https://www.caniemail.com/features/css-font-kerning/",
       },
       {
         "notes": [],
@@ -29430,10 +29447,8 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-max-inline-size/",
       },
       {
-        "notes": [
-          "Partial. Doesn't work on \`<table>\` elements, as per [CSS 2.1 specification](https://www.w3.org/TR/CSS2/visudet.html#min-max-widths).",
-        ],
-        "support": "partial",
+        "notes": [],
+        "support": "full",
         "title": "max-width",
         "url": "https://www.caniemail.com/features/css-max-width/",
       },
@@ -29639,9 +29654,15 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "table-layout",
         "url": "https://www.caniemail.com/features/css-table-layout/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "text-align-last",
+        "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
         "notes": [],
@@ -29669,7 +29690,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-style",
         "url": "https://www.caniemail.com/features/css-text-decoration-style/",
       },
@@ -29937,7 +29958,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<acronym> element",
         "url": "https://www.caniemail.com/features/html-acronym/",
       },
@@ -30453,7 +30474,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-collapse",
         "url": "https://www.caniemail.com/features/css-border-collapse/",
       },
@@ -30495,7 +30516,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "border-spacing",
         "url": "https://www.caniemail.com/features/css-border-spacing/",
       },
@@ -30597,7 +30618,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -30624,6 +30645,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-kerning",
+        "url": "https://www.caniemail.com/features/css-font-kerning/",
       },
       {
         "notes": [],
@@ -31180,9 +31207,15 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "table-layout",
         "url": "https://www.caniemail.com/features/css-table-layout/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "text-align-last",
+        "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
         "notes": [],
@@ -31210,7 +31243,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-decoration-style",
         "url": "https://www.caniemail.com/features/css-text-decoration-style/",
       },
@@ -31488,7 +31521,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "<acronym> element",
         "url": "https://www.caniemail.com/features/html-acronym/",
       },
@@ -37868,10 +37901,8 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-max-height/",
       },
       {
-        "notes": [
-          "Partial. Doesn't work on \`<table>\` elements, as per [CSS 2.1 specification](https://www.w3.org/TR/CSS2/visudet.html#min-max-widths).",
-        ],
-        "support": "partial",
+        "notes": [],
+        "support": "full",
         "title": "max-width",
         "url": "https://www.caniemail.com/features/css-max-width/",
       },
