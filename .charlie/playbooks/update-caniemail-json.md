@@ -38,6 +38,11 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
      exit 1
    fi
 
+   if ! command -v node >/dev/null 2>&1; then
+     echo "Error: 'node' is required to parse last_update_date but is not installed or not on PATH" >&2
+     exit 1
+   fi
+
    remote_ts="$(node -e 'const ms = Date.parse(process.argv[1]); if (!Number.isFinite(ms)) process.exit(1); console.log(Math.floor(ms / 1000));' "$remote_date")" || {
      echo "Unable to parse remote last_update_date: '$remote_date'" >&2
      exit 1
@@ -99,17 +104,14 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    if [ "$test_exit" -ne 0 ]; then
      pnpm test -- --update || true
 
-     if [ -n "$(git status --porcelain -- test/__snapshots__)" ]; then
-       snapshots_updated=true
-     fi
-
      set +e
      pnpm test
      post_update_exit=$?
      set -e
 
-     if [ "$post_update_exit" -ne 0 ]; then
-       snapshots_updated=false
+     if [ "$post_update_exit" -eq 0 ] && [ -n "$(git status --porcelain -- test/__snapshots__)" ]; then
+       snapshots_updated=true
+     elif [ "$post_update_exit" -ne 0 ]; then
        git restore --staged --worktree test/__snapshots__ || true
        git clean -fd -- test/__snapshots__ || true
      fi
@@ -121,7 +123,7 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
    ```bash
    git add data/caniemail.json
 
-   if [ -n "$(git status --porcelain -- test/__snapshots__)" ]; then
+   if [ "$snapshots_updated" = true ]; then
      git add test/__snapshots__
    fi
 
@@ -136,16 +138,23 @@ Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If
      - Whether snapshots were updated
      - If tests are failing after the snapshot check: explicitly note that failures are _not_ snapshot-only and need maintainer review
    ```bash
-   test_status="passed"
-   if [ "$test_exit" -ne 0 ] && [ "${post_update_exit:-1}" -ne 0 ]; then
+   test_status="passed (no snapshot updates needed)"
+   if [ "$test_exit" -ne 0 ] && [ "${post_update_exit:-1}" -eq 0 ]; then
+     test_status="passed after snapshot updates"
+   elif [ "$test_exit" -ne 0 ] && [ "${post_update_exit:-1}" -ne 0 ]; then
      test_status="failed (non-snapshot failures; needs maintainer review)"
+   fi
+
+   snapshots_label="no"
+   if [ "$snapshots_updated" = true ]; then
+     snapshots_label="yes"
    fi
 
    body="$(cat <<EOF
 Updated data/caniemail.json to remote last_update_date: ${remote_date}.
 
 - Tests: ${test_status}
-- Snapshots updated: ${snapshots_updated}
+- Snapshots updated: ${snapshots_label}
 EOF
 )"
 
