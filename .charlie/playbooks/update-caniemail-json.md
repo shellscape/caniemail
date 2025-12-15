@@ -7,6 +7,7 @@ Intended schedule: run daily at 12:00 (time-of-day not enforced by this repo).
 Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If there’s an update, open a PR with the refreshed `data/caniemail.json` (and snapshots only when failures are snapshot-only).
 
 This playbook assumes `origin` points at GitHub (github.com) and that `gh` is authenticated for the repo.
+It supports standard github.com HTTPS/SSH remotes only; other hosts or URL formats will cause it to exit.
 
 ## Creates
 
@@ -61,7 +62,7 @@ This playbook assumes `origin` points at GitHub (github.com) and that `gh` is au
    fi
    ```
 
-2. The script in step 1 exits cleanly (no-op) if the remote revision isn’t newer than the local one; otherwise continue.
+2. If `remote_ts` is less than or equal to `local_ts`, exit cleanly (no-op); otherwise continue.
 
 3. Create a deterministic branch name for the revision, and avoid duplicates.
 
