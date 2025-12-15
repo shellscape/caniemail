@@ -1,0 +1,123 @@
+# Update `data/caniemail.json` from caniemail.com (daily)
+
+## Overview
+
+Intended schedule: run daily at 12:00.
+
+Check https://www.caniemail.com/api/data.json for a newer `last_update_date`. If there’s an update, open a PR with the refreshed `data/caniemail.json` (and snapshots only when failures are snapshot-only).
+
+## Creates
+
+- Artifact: Pull request (max 1 per run)
+- Title pattern: `chore: update caniemail.json for revision <YYYY-MM-DD>`
+- Branch: `chore/data-update/<unix-timestamp>`
+
+## No-op when
+
+- The remote `last_update_date` is the same as (or older than) the local `data/caniemail.json`.
+- A branch already exists for the remote revision.
+- An open PR already exists for the remote revision.
+
+## Steps
+
+1. Fetch the remote dataset into a temp file and capture the remote/local revision dates.
+
+   ```bash
+   set -euo pipefail
+   tmp_json="$(mktemp)"
+   curl -fsSL 'https://www.caniemail.com/api/data.json' > "$tmp_json"
+
+   remote_date="$(jq -r '.last_update_date' "$tmp_json")"
+   local_date="$(jq -r '.last_update_date' data/caniemail.json)"
+
+   remote_ts="$(date -u -d "$remote_date" +%s)"
+   local_ts="$(date -u -d "$local_date" +%s)"
+   echo "remote=$remote_date ($remote_ts) local=$local_date ($local_ts)"
+   ```
+
+2. If `remote_ts <= local_ts`, exit cleanly (no-op).
+
+3. Create a deterministic branch name for the revision, and avoid duplicates.
+
+   ```bash
+   branch="chore/data-update/$remote_ts"
+
+   # If the branch already exists remotely, no-op.
+   if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+     echo "Branch already exists: $branch"
+     exit 0
+   fi
+
+   # If an open PR already exists for this revision, no-op.
+   open_pr_count="$(gh pr list --state open --search "${remote_date}" --json title --jq 'length')"
+   if [ "$open_pr_count" -gt 0 ]; then
+     echo "Open PR already exists for revision: $remote_date"
+     exit 0
+   fi
+   ```
+
+4. Create the branch and update `data/caniemail.json`.
+
+   ```bash
+   git checkout -b "$branch"
+   cp "$tmp_json" data/caniemail.json
+   rm "$tmp_json"
+   ```
+
+5. Run tests once (do not update snapshots yet).
+
+   ```bash
+   set +e
+   pnpm test
+   test_exit=$?
+   set -e
+   ```
+
+6. If `pnpm test` failed, determine whether failures are snapshot-only.
+
+   1. Run `pnpm test -- --update` _once_, then rerun `pnpm test`.
+   2. If the second `pnpm test` passes, snapshot-only failures were fixed; keep the snapshot updates.
+   3. If the second `pnpm test` still fails, **do not attempt to fix anything** (including snapshots). Restore any snapshot changes and continue.
+      - This is important: non-snapshot failures must be reviewed by a maintainer; Charlie should not attempt to resolve them.
+
+   ```bash
+   if [ "$test_exit" -ne 0 ]; then
+     pnpm test -- --update || true
+
+     set +e
+     pnpm test
+     post_update_exit=$?
+     set -e
+
+     if [ "$post_update_exit" -ne 0 ]; then
+       git restore --staged --worktree test/__snapshots__ || true
+     fi
+   fi
+   ```
+
+7. Commit the changes and push the branch.
+
+   ```bash
+   git add data/caniemail.json test/__snapshots__
+   git commit -m "chore: update caniemail.json for revision ${remote_date}"
+   git push -u origin "$branch"
+   ```
+
+8. Open a PR.
+   - Title: `chore: update caniemail.json for revision <remote_date>`
+   - Body should include:
+     - Remote revision date (`last_update_date`)
+     - Whether snapshots were updated
+     - If tests are failing after the snapshot check: explicitly note that failures are _not_ snapshot-only and need maintainer review
+   ```bash
+   gh pr create --title "chore: update caniemail.json for revision ${remote_date}" --body "Closes #3" --base main
+   ```
+
+## Rollback
+
+- Close the PR and delete the branch `chore/data-update/<unix-timestamp>`.
+
+## References
+
+- Current brittle workflow: `.github/workflows/fetch-json.yml`
+- Legacy script: `scripts/update-data.sh`

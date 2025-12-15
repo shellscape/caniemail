@@ -1,0 +1,11 @@
+checkCommands:
+  fix: pnpm format && pnpm lint
+  lint: pnpm lint
+  types: pnpm typecheck
+  test: pnpm test
+
+# Proactive behaviors currently run once per day at 00:00 PST (beta).
+# This playbook is intended to be the daily caniemail.com data refresh (target: 12:00).
+beta:
+  proactive:
+    - playbook: '.charlie/playbooks/update-caniemail-json.md'
