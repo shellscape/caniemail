@@ -1,5 +1,13 @@
 # caniemail ChangeLog
 
+## v2.0.2
+
+_2026-05-17_
+
+### Bugfixes
+
+- fix: align with new data format. new clients, features ([#7](https://github.com/shellscape/caniemail/issues/7))
+
 ## v1.0.0
 
 _2025-04-28_
