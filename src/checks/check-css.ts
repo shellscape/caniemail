@@ -6,9 +6,11 @@ import {
   getMatchingKeywordTitles,
   getMatchingPropertyTitles,
   getMatchingPropertyValuePairTitles,
+  getMatchingPropertyValueTitles,
   getMatchingUnitTitles
 } from '../css-titles.js';
-import { type Position, getFeatures } from '../features.js';
+import { type Position } from '../features.js';
+import { getMatchingImageTitles, getUrlsFromCssValue } from '../image-titles.js';
 import { getMatchingPseudoSelectorTitles, getMatchingSelectorTitles } from '../selectors.js';
 
 import { type BaseCheckArgs, adjustPosition } from './check-base.js';
@@ -64,13 +66,11 @@ export const checkDeclarations = ({
   issues,
   offset
 }: CheckDeclarationsArgs) => {
-  const { css: features } = getFeatures();
-
   for (const declaration of declarations) {
     const { property: propertyName, value: propertyValue, position } = declaration;
     const adjustedPosition = adjustPosition(position, offset);
 
-    if (propertyName !== void 0 && features.get(propertyName) !== void 0) {
+    if (propertyName !== void 0) {
       const propertyTitles = getMatchingPropertyTitles({ propertyName });
       checkFeatures({ clients, issues, titles: propertyTitles, position: adjustedPosition });
     }
@@ -78,11 +78,15 @@ export const checkDeclarations = ({
     if (propertyValue !== void 0) {
       const functionTitles = getMatchingFunctionTitles({ propertyValue });
       const keywordTitles = getMatchingKeywordTitles({ propertyValue });
+      const propertyValueTitles = getMatchingPropertyValueTitles({ propertyValue });
       const unitTitles = getMatchingUnitTitles({ propertyValue });
+      const imageTitles = getMatchingImageTitles({ urls: getUrlsFromCssValue(propertyValue) });
 
       checkFeatures({ clients, issues, titles: functionTitles, position: adjustedPosition });
       checkFeatures({ clients, issues, titles: keywordTitles, position: adjustedPosition });
+      checkFeatures({ clients, issues, titles: propertyValueTitles, position: adjustedPosition });
       checkFeatures({ clients, issues, titles: unitTitles, position: adjustedPosition });
+      checkFeatures({ clients, issues, titles: imageTitles, position: adjustedPosition });
     }
 
     if (propertyName !== void 0 && propertyValue !== void 0) {
@@ -104,6 +108,10 @@ const checkSelectors = ({ clients, issues, selectors, position, offset }: CheckS
   const adjustedPosition = adjustPosition(position, offset);
 
   for (const selector of selectors) {
+    if (selector.includes('&')) {
+      checkFeatures({ clients, issues, titles: ['CSS Nesting'], position: adjustedPosition });
+    }
+
     const pseudoSelectorTitles = getMatchingPseudoSelectorTitles({ selector });
     const selectorTitles = getMatchingSelectorTitles({ selector });
 
@@ -117,6 +125,10 @@ export const checkStylesheet = ({ clients, issues, stylesheet, offset }: CheckSt
   for (const stylesheetRule of stylesheet.stylesheet?.rules ?? []) {
     if (stylesheetRule.type === 'rule') {
       const rule = stylesheetRule;
+      const cssCommentPositions = (rule.declarations ?? [])
+        .filter((declaration) => declaration.type === 'comment')
+        .map((declaration) => declaration.position)
+        .filter((position) => position !== undefined);
       const declarations = (rule.declarations ?? [])
         .filter((declaration) => declaration.type !== 'comment')
         .map((declaration) => ({
@@ -126,12 +138,29 @@ export const checkStylesheet = ({ clients, issues, stylesheet, offset }: CheckSt
         }));
 
       checkDeclarations({ clients, declarations, issues, offset });
+      for (const position of cssCommentPositions) {
+        checkFeatures({
+          clients,
+          issues,
+          titles: ['CSS comments'],
+          position: adjustPosition(position, offset)
+        });
+      }
       checkSelectors({
         clients,
         issues,
         selectors: rule.selectors ?? [],
         position: rule.position ? { ...rule.position } : undefined,
         offset
+      });
+    }
+
+    if (stylesheetRule.type === 'comment') {
+      checkFeatures({
+        clients,
+        issues,
+        titles: ['CSS comments'],
+        position: adjustPosition(stylesheetRule.position, offset)
       });
     }
 

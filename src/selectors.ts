@@ -118,7 +118,12 @@ export const selectorTitles = fromTitleEntries<SelectorDetector>(
 );
 
 export const getMatchingSelectorTitles = ({ selector }: { selector: string }) => {
-  const parsedSelectors = CSSWhat.parse(selector);
+  let parsedSelectors: CSSWhat.Selector[][];
+  try {
+    parsedSelectors = CSSWhat.parse(selector);
+  } catch {
+    return [];
+  }
   return getTitleMatches(selectorTitles, selector, (tester) => tester(parsedSelectors));
 };
 

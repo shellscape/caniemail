@@ -2,7 +2,7 @@ import { getProperty } from 'dot-prop';
 import onetime from 'onetime';
 
 import { type EmailClient, type SupportTypeResult, getSupportType } from './clients.js';
-import { type RawFeatureData, caniEmailJson } from './json.cjs';
+import { type RawFeatureData, caniEmailJson } from './json.js';
 
 export { caniEmailJson as rawData };
 
@@ -39,6 +39,8 @@ interface GetFeaturesResult {
   all: FeatureSet;
   css: FeatureSet;
   html: FeatureSet;
+  image: FeatureSet;
+  others: FeatureSet;
 }
 
 export class FeatureMap<TValue> extends Map<EmailClient, TValue[]> {
@@ -55,17 +57,23 @@ export const getFeatures = onetime((): GetFeaturesResult => {
   const all = new Map();
   const css = new Map();
   const html = new Map();
+  const image = new Map();
+  const others = new Map();
 
   for (const bit of caniEmailJson.data) {
     all.set(bit.title, bit);
     if (bit.category === 'css') css.set(bit.title, bit);
     if (bit.category === 'html') html.set(bit.title, bit);
+    if (bit.category === 'image') image.set(bit.title, bit);
+    if (bit.category === 'others') others.set(bit.title, bit);
   }
 
   return {
     all,
     css,
-    html
+    html,
+    image,
+    others
   };
 });
 
@@ -86,9 +94,9 @@ export const getAllFeatures = (clients: EmailClient[]) => {
       if (supportMap === void 0) continue;
 
       const supportStatus = getSupportType(supportMap);
-      const notes = (supportStatus.noteNumbers ?? []).map(
-        (noteNumber: number) => feature.notes_by_num![String(noteNumber)]
-      );
+      const notes = (supportStatus.noteNumbers ?? [])
+        .map((noteNumber: number) => feature.notes_by_num?.[String(noteNumber)])
+        .filter((note) => note !== undefined);
       const support = supportStatus.type;
 
       if (support === 'none') {

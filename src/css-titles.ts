@@ -5,6 +5,66 @@ import { fromTitleEntries, getTitleMatches } from './helpers.js';
 const features = getFeatures().css;
 const keys = [...features.keys()];
 const propertyNameRegex = /^[a-z-]+$/;
+const propertyTitleValues: Record<string, string[]> = {
+  'block-size & inline-size': ['block-size', 'inline-size'],
+  'border-inline & border-block': ['border-inline', 'border-block'],
+  'border-inline & border-block individual logical properties': [
+    'border-block-end',
+    'border-block-start',
+    'border-inline-end',
+    'border-inline-start'
+  ],
+  'border-inline & border-block longhand properties': [
+    'border-block-color',
+    'border-block-style',
+    'border-block-width',
+    'border-inline-color',
+    'border-inline-style',
+    'border-inline-width'
+  ],
+  'border-radius logical properties': [
+    'border-end-end-radius',
+    'border-end-start-radius',
+    'border-start-end-radius',
+    'border-start-start-radius'
+  ],
+  'color-scheme CSS property': ['color-scheme'],
+  'css column properties': [
+    'column-count',
+    'column-fill',
+    'column-gap',
+    'column-rule',
+    'column-rule-color',
+    'column-rule-style',
+    'column-rule-width',
+    'column-span',
+    'column-width',
+    'columns'
+  ],
+  'gap, column-gap, row-gap': ['column-gap', 'gap', 'row-gap'],
+  'grid-template-* properties': [
+    'grid-template',
+    'grid-template-areas',
+    'grid-template-columns',
+    'grid-template-rows'
+  ],
+  'margin-block-start & margin-block-end': ['margin-block-end', 'margin-block-start'],
+  'margin-inline & margin-block': ['margin-block', 'margin-inline'],
+  'margin-inline-start & margin-inline-end': ['margin-inline-end', 'margin-inline-start'],
+  'padding-block-start & padding-block-end': ['padding-block-end', 'padding-block-start'],
+  'padding-inline & padding-block': ['padding-block', 'padding-inline'],
+  'padding-inline-start & padding-inline-end': ['padding-inline-end', 'padding-inline-start']
+};
+const propertyValueTitleValues: Record<string, string[]> = {
+  'fit-content, min-content, max-content': ['fit-content', 'max-content', 'min-content'],
+  'system-ui, ui-serif, ui-sans-serif, ui-rounded, ui-monospace': [
+    'system-ui',
+    'ui-monospace',
+    'ui-rounded',
+    'ui-sans-serif',
+    'ui-serif'
+  ]
+};
 
 export const atRuleTitles = fromTitleEntries<string>(
   keys.map((title) => {
@@ -61,6 +121,8 @@ export const propertyValuePairTitles = fromTitleEntries<
 // Map of property titles to the properties they support
 export const propertyTitles = fromTitleEntries<string[]>(
   keys.map((title) => {
+    if (propertyTitleValues[title]) return { title, value: propertyTitleValues[title] };
+
     if (title === 'left, right, top, bottom') {
       return {
         title,
@@ -126,7 +188,14 @@ export const getMatchingKeywordTitles = ({ propertyValue }: { propertyValue: str
   getTitleMatches(keywordTitles, propertyValue);
 
 export const getMatchingPropertyTitles = ({ propertyName }: { propertyName: string }): string[] =>
-  getTitleMatches(propertyTitles, propertyName);
+  getTitleMatches(propertyTitles, propertyName, (values) =>
+    values.some((value: string) => value === propertyName || propertyName.startsWith(`${value}-`))
+  );
+
+export const getMatchingPropertyValueTitles = ({ propertyValue }: { propertyValue: string }) =>
+  getTitleMatches(propertyValueTitleValues, propertyValue, (values) =>
+    values.some((value: string) => new RegExp(`(^|[\\s,])${value}([\\s,]|$)`).test(propertyValue))
+  );
 
 export const getMatchingUnitTitles = ({ propertyValue }: { propertyValue: string }) =>
   getTitleMatches(unitTitles, propertyValue, (value) => {
