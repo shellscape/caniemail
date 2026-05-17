@@ -200,6 +200,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -226,6 +232,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "font-kerning",
         "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [],
@@ -532,7 +544,9 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
-        "notes": [],
+        "notes": [
+          "Support of the \`match-parent\` value depends on browser support.",
+        ],
         "support": "full",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
@@ -1323,6 +1337,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-display-flex/",
       },
       {
+        "notes": [
+          "Not supported with non Google accounts.",
+        ],
+        "support": "partial",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
         "notes": [],
         "support": "full",
         "title": "display:none",
@@ -1355,6 +1377,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "font-kerning",
         "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [
+          "Not supported with non Google accounts.",
+        ],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [],
@@ -1687,10 +1717,8 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
-        "notes": [
-          "Partial. Flow-relative values \`start\` and \`end\` are not supported with non Gmail account.",
-        ],
-        "support": "partial",
+        "notes": [],
+        "support": "full",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
       },
@@ -2499,6 +2527,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-display-flex/",
       },
       {
+        "notes": [
+          "Not supported with non Google accounts.",
+        ],
+        "support": "partial",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
         "notes": [],
         "support": "full",
         "title": "display:none",
@@ -2531,6 +2567,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "font-kerning",
         "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [
+          "Not supported with non Google accounts.",
+        ],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [],
@@ -2871,7 +2915,8 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [
-          "Partial. Flow-relative values \`start\` and \`end\` are not supported with non Gmail account.",
+          "Partial. Doesn't support the \`match-parent\` value.",
+          "Supports the vendor prefixed value \`-webkit-match-parent\`.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -3717,6 +3762,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -3741,6 +3792,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [
+          "2-value syntax is supported, but the first value (font-metric) is ignored.",
+        ],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -3885,6 +3944,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -3893,6 +3958,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -4073,6 +4150,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -4790,6 +4868,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -4808,6 +4892,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [
+          "2-value syntax is supported, but the first value (font-metric) is ignored.",
+        ],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -4952,6 +5044,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -4960,6 +5058,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -5138,6 +5248,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -5806,6 +5917,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -5824,6 +5941,14 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [
+          "2-value syntax is supported, but the first value (font-metric) is ignored.",
+        ],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -5975,6 +6100,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -5983,6 +6114,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -6163,6 +6306,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -6956,6 +7100,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -7046,6 +7196,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -7282,6 +7438,24 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "radial-gradient()",
         "url": "https://www.caniemail.com/features/css-radial-gradient/",
       },
@@ -7404,7 +7578,9 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
-        "notes": [],
+        "notes": [
+          "Support of the \`match-parent\` value depends on browser support.",
+        ],
         "support": "full",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
@@ -8397,6 +8573,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -8479,6 +8661,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -8747,6 +8935,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -8755,6 +8949,20 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [
+          "Button is not focusable on tab",
+        ],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -10213,6 +10421,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -10293,6 +10507,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -10553,6 +10773,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -10561,6 +10787,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -11947,6 +12185,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -12005,6 +12249,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -12259,6 +12509,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -12268,6 +12524,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -13475,6 +13743,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -13551,6 +13825,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -13781,6 +14061,24 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "position",
         "url": "https://www.caniemail.com/features/css-position/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -14943,6 +15241,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-font-kerning/",
       },
       {
+        "notes": [],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
         "notes": [
           "Partial support. \`relative\` and \`percentage\` size values not supported.",
         ],
@@ -14964,11 +15268,35 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [
+          "Partial. Not supported with Microsoft accounts.",
+        ],
+        "support": "partial",
+        "title": "clamp()",
+        "url": "https://www.caniemail.com/features/css-function-clamp/",
+      },
+      {
+        "notes": [
           "Partial. Not supported with Hotmail/Outlook accounts.",
         ],
         "support": "partial",
         "title": "light-dark()",
         "url": "https://www.caniemail.com/features/css-function-light-dark/",
+      },
+      {
+        "notes": [
+          "Partial. Not supported with Microsoft accounts.",
+        ],
+        "support": "partial",
+        "title": "max()",
+        "url": "https://www.caniemail.com/features/css-function-max/",
+      },
+      {
+        "notes": [
+          "Partial. Not supported with Microsoft accounts.",
+        ],
+        "support": "partial",
+        "title": "min()",
+        "url": "https://www.caniemail.com/features/css-function-min/",
       },
       {
         "notes": [],
@@ -15005,6 +15333,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -15238,6 +15572,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -15247,6 +15587,20 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [
+          "Input with type text is not focusable at all",
+        ],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -15509,8 +15863,11 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. Doesn't support the \`match-parent\` value.",
+          "Supports the vendor prefixed value \`-webkit-match-parent\`.",
+        ],
+        "support": "partial",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
       },
@@ -16555,6 +16912,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -16643,6 +17006,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -16888,6 +17257,24 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "position",
         "url": "https://www.caniemail.com/features/css-position/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -18080,6 +18467,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -18162,6 +18555,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -18421,6 +18820,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -18430,6 +18835,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -19524,6 +19941,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -19796,6 +20219,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -19804,6 +20233,22 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [
+          "Partial. Only supported on type selectors.",
+        ],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [
+          "Partial. Only supported on type selectors.",
+        ],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -20954,6 +21399,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -20992,6 +21443,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "font-kerning",
         "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [],
@@ -21192,6 +21649,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -21200,6 +21663,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -21603,6 +22078,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "align attribute",
         "url": "https://www.caniemail.com/features/html-align/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "Local anchors",
+        "url": "https://www.caniemail.com/features/html-anchor-links/",
       },
       {
         "notes": [],
@@ -22203,6 +22684,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -22235,6 +22722,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "font-kerning",
         "url": "https://www.caniemail.com/features/css-font-kerning/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [],
@@ -22438,6 +22931,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -22446,6 +22945,22 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [
+          "Partial. Only supported on type selectors.",
+        ],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [
+          "Partial. Only supported on type selectors.",
+        ],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -22603,8 +23118,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-table-layout/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. Doesn't support the \`match-parent\` value.",
+        ],
+        "support": "partial",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
       },
@@ -22839,6 +23356,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "align attribute",
         "url": "https://www.caniemail.com/features/html-align/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": "Local anchors",
+        "url": "https://www.caniemail.com/features/html-anchor-links/",
       },
       {
         "notes": [],
@@ -23490,6 +24013,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -23581,6 +24110,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -23811,6 +24346,24 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "position",
         "url": "https://www.caniemail.com/features/css-position/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -24835,6 +25388,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -24917,6 +25476,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -25159,6 +25724,24 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "position",
         "url": "https://www.caniemail.com/features/css-position/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -26185,6 +26768,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -26253,6 +26842,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -26467,6 +27062,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -26475,6 +27076,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -27516,7 +28129,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "backdrop-filter",
         "url": "https://www.caniemail.com/features/css-backdrop-filter/",
       },
@@ -27684,7 +28297,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "CSS comments",
         "url": "https://www.caniemail.com/features/css-comments/",
       },
@@ -27770,7 +28383,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -27840,7 +28459,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "hyphenate-character",
         "url": "https://www.caniemail.com/features/css-hyphenate-character/",
       },
@@ -27863,6 +28482,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -28026,7 +28651,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "CSS Nesting",
         "url": "https://www.caniemail.com/features/css-nesting/",
       },
@@ -28049,8 +28674,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-opacity/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "orphans",
         "url": "https://www.caniemail.com/features/css-orphans/",
       },
@@ -28115,6 +28742,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":active",
         "url": "https://www.caniemail.com/features/css-pseudo-class-active/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -28198,7 +28837,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "tab-size",
         "url": "https://www.caniemail.com/features/css-tab-size/",
       },
@@ -28269,13 +28908,17 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-emphasis/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. Hard-coded negative values are not supported, but negative values as a result of the \`calc()\` function are supported.",
+        ],
+        "support": "partial",
         "title": "text-indent",
         "url": "https://www.caniemail.com/features/css-text-indent/",
       },
       {
-        "notes": [],
+        "notes": [
+          "Partial. Depends on browser support",
+        ],
         "support": "partial",
         "title": "text-justify",
         "url": "https://www.caniemail.com/features/css-text-justify/",
@@ -28318,7 +28961,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-wrap",
         "url": "https://www.caniemail.com/features/css-text-wrap/",
       },
@@ -28437,7 +29080,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-unit-vw/",
       },
       {
-        "notes": [],
+        "notes": [
+          "\`all\` value does not work",
+          "\`none\` value does not work, client allow to select text anyway",
+        ],
         "support": "partial",
         "title": "user-select",
         "url": "https://www.caniemail.com/features/css-user-select/",
@@ -28462,7 +29108,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "white-space-collapse",
         "url": "https://www.caniemail.com/features/css-white-space-collapse/",
       },
@@ -28473,8 +29119,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-white-space/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "widows",
         "url": "https://www.caniemail.com/features/css-widows/",
       },
@@ -28608,13 +29256,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellpadding attribute",
         "url": "https://www.caniemail.com/features/html-cellpadding/",
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellspacing attribute",
         "url": "https://www.caniemail.com/features/html-cellspacing/",
       },
@@ -28626,7 +29274,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "HTML comments",
         "url": "https://www.caniemail.com/features/html-comments/",
       },
@@ -28986,7 +29634,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "backdrop-filter",
         "url": "https://www.caniemail.com/features/css-backdrop-filter/",
       },
@@ -29124,7 +29772,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "clear",
         "url": "https://www.caniemail.com/features/css-clear/",
       },
@@ -29148,7 +29796,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "CSS comments",
         "url": "https://www.caniemail.com/features/css-comments/",
       },
@@ -29232,7 +29880,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -29300,7 +29954,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "hyphenate-character",
         "url": "https://www.caniemail.com/features/css-hyphenate-character/",
       },
@@ -29323,6 +29977,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -29483,7 +30143,9 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-modern-color/",
       },
       {
-        "notes": [],
+        "notes": [
+          "Partial. \`@media\` is not fully supported, and \`& & &\` syntax not supported",
+        ],
         "support": "partial",
         "title": "CSS Nesting",
         "url": "https://www.caniemail.com/features/css-nesting/",
@@ -29507,8 +30169,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-opacity/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "orphans",
         "url": "https://www.caniemail.com/features/css-orphans/",
       },
@@ -29573,6 +30237,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":active",
         "url": "https://www.caniemail.com/features/css-pseudo-class-active/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -29648,7 +30324,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "tab-size",
         "url": "https://www.caniemail.com/features/css-tab-size/",
       },
@@ -29720,12 +30396,6 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
-        "title": "text-justify",
-        "url": "https://www.caniemail.com/features/css-text-justify/",
-      },
-      {
-        "notes": [],
         "support": "full",
         "title": "text-orientation",
         "url": "https://www.caniemail.com/features/css-text-orientation/",
@@ -29762,7 +30432,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-wrap",
         "url": "https://www.caniemail.com/features/css-text-wrap/",
       },
@@ -29875,7 +30545,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-unit-vw/",
       },
       {
-        "notes": [],
+        "notes": [
+          "\`all\` value does not work",
+          "\`none\` value does not work, client allow to select text anyway",
+        ],
         "support": "partial",
         "title": "user-select",
         "url": "https://www.caniemail.com/features/css-user-select/",
@@ -29902,7 +30575,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "white-space-collapse",
         "url": "https://www.caniemail.com/features/css-white-space-collapse/",
       },
@@ -29913,8 +30586,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-white-space/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "widows",
         "url": "https://www.caniemail.com/features/css-widows/",
       },
@@ -30036,13 +30711,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellpadding attribute",
         "url": "https://www.caniemail.com/features/html-cellpadding/",
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellspacing attribute",
         "url": "https://www.caniemail.com/features/html-cellspacing/",
       },
@@ -30054,7 +30729,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "HTML comments",
         "url": "https://www.caniemail.com/features/html-comments/",
       },
@@ -30408,7 +31083,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "backdrop-filter",
         "url": "https://www.caniemail.com/features/css-backdrop-filter/",
       },
@@ -30546,7 +31221,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "clear",
         "url": "https://www.caniemail.com/features/css-clear/",
       },
@@ -30570,7 +31245,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "CSS comments",
         "url": "https://www.caniemail.com/features/css-comments/",
       },
@@ -30654,7 +31329,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -30720,7 +31401,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "hyphenate-character",
         "url": "https://www.caniemail.com/features/css-hyphenate-character/",
       },
@@ -30743,6 +31424,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "!important keyword",
         "url": "https://www.caniemail.com/features/css-important/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -30889,7 +31576,9 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-mix-blend-mode/",
       },
       {
-        "notes": [],
+        "notes": [
+          "Partial. \`@media\` is not fully supported, and \`& & &\` syntax not supported",
+        ],
         "support": "partial",
         "title": "CSS Nesting",
         "url": "https://www.caniemail.com/features/css-nesting/",
@@ -30913,8 +31602,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-opacity/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "orphans",
         "url": "https://www.caniemail.com/features/css-orphans/",
       },
@@ -30992,6 +31683,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -31201,7 +31904,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "tab-size",
         "url": "https://www.caniemail.com/features/css-tab-size/",
       },
@@ -31279,7 +31982,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-justify",
         "url": "https://www.caniemail.com/features/css-text-justify/",
       },
@@ -31321,7 +32024,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "text-wrap",
         "url": "https://www.caniemail.com/features/css-text-wrap/",
       },
@@ -31440,7 +32143,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-unit-vw/",
       },
       {
-        "notes": [],
+        "notes": [
+          "\`all\` value does not work",
+          "\`none\` value does not work, client allow to select text anyway",
+        ],
         "support": "partial",
         "title": "user-select",
         "url": "https://www.caniemail.com/features/css-user-select/",
@@ -31465,7 +32171,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "white-space-collapse",
         "url": "https://www.caniemail.com/features/css-white-space-collapse/",
       },
@@ -31476,8 +32182,10 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-white-space/",
       },
       {
-        "notes": [],
-        "support": "partial",
+        "notes": [
+          "Webmail rendering depends on browser support",
+        ],
+        "support": "full",
         "title": "widows",
         "url": "https://www.caniemail.com/features/css-widows/",
       },
@@ -31587,13 +32295,13 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellpadding attribute",
         "url": "https://www.caniemail.com/features/html-cellpadding/",
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "cellspacing attribute",
         "url": "https://www.caniemail.com/features/html-cellspacing/",
       },
@@ -31605,7 +32313,7 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
-        "support": "partial",
+        "support": "full",
         "title": "HTML comments",
         "url": "https://www.caniemail.com/features/html-comments/",
       },
@@ -32120,6 +32828,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -32710,6 +33419,18 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":link",
         "url": "https://www.caniemail.com/features/css-pseudo-class-link/",
@@ -32756,6 +33477,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -33251,6 +33973,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -33275,6 +34003,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -33413,6 +34147,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -33421,6 +34161,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -33601,6 +34353,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -34353,6 +35106,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -34393,6 +35152,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -34588,6 +35353,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -34597,6 +35368,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -35510,6 +36293,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -35548,6 +36337,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -35749,6 +36544,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -35758,6 +36559,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -36675,6 +37488,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -36719,6 +37538,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -36924,6 +37749,12 @@ exports[`all features > getAllFeatures() 2`] = `
       },
       {
         "notes": [],
+        "support": "partial",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
         "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
@@ -36933,6 +37764,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -37793,6 +38636,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -37811,6 +38660,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -37973,6 +38828,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -37981,6 +38842,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -38141,6 +39014,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -38821,6 +39695,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "display:grid",
+        "url": "https://www.caniemail.com/features/css-display-grid/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "display:none",
         "url": "https://www.caniemail.com/features/css-display-none/",
       },
@@ -38839,6 +39719,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "partial",
         "title": "float",
         "url": "https://www.caniemail.com/features/css-float/",
+      },
+      {
+        "notes": [],
+        "support": "partial",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
       },
       {
         "notes": [
@@ -39014,6 +39900,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -39022,6 +39914,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "full",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "full",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -39208,6 +40112,7 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [
           "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+          "Partial. Doesn't support the \`match-parent\` value.",
         ],
         "support": "partial",
         "title": "text-align",
@@ -39839,6 +40744,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "full",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "full",
         "title": "font-size",
         "url": "https://www.caniemail.com/features/css-font-size/",
       },
@@ -40066,8 +40977,11 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-text-align-last/",
       },
       {
-        "notes": [],
-        "support": "full",
+        "notes": [
+          "Partial. Doesn't support the \`match-parent\` value.",
+          "Supports the vendor prefixed value \`-webkit-match-parent\`.",
+        ],
+        "support": "partial",
         "title": "text-align",
         "url": "https://www.caniemail.com/features/css-text-align/",
       },
@@ -41055,6 +41969,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": "inline-size ",
         "url": "https://www.caniemail.com/features/css-inline-size/",
       },
@@ -41216,6 +42136,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -41224,6 +42150,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -44023,6 +44961,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": "font-stretch",
         "url": "https://www.caniemail.com/features/css-font-stretch/",
       },
@@ -44079,6 +45023,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -44305,6 +45255,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -44313,6 +45269,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -45309,6 +46277,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": "font-size-adjust",
+        "url": "https://www.caniemail.com/features/css-font-size-adjust/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": "clamp()",
         "url": "https://www.caniemail.com/features/css-function-clamp/",
       },
@@ -45359,6 +46333,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -45573,6 +46553,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":checked",
         "url": "https://www.caniemail.com/features/css-pseudo-class-checked/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
       },
       {
         "notes": [],
@@ -46407,6 +47393,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": "inline-size ",
         "url": "https://www.caniemail.com/features/css-inline-size/",
       },
@@ -46753,12 +47745,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -46809,6 +47795,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -47131,14 +48123,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "url": "https://www.caniemail.com/features/css-white-space-collapse/",
       },
       {
-        "notes": [
-          "Buggy. Clicking an anchor link does nothing.",
-        ],
-        "support": "none",
-        "title": "Local anchors",
-        "url": "https://www.caniemail.com/features/html-anchor-links/",
-      },
-      {
         "notes": [],
         "support": "none",
         "title": "aria-live attribute",
@@ -47375,12 +48359,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -47437,6 +48415,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -47759,14 +48743,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "word-wrap",
         "url": "https://www.caniemail.com/features/css-word-wrap/",
-      },
-      {
-        "notes": [
-          "Buggy. Clicking an anchor link does nothing.",
-        ],
-        "support": "none",
-        "title": "Local anchors",
-        "url": "https://www.caniemail.com/features/html-anchor-links/",
       },
       {
         "notes": [],
@@ -48101,12 +49077,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -48195,6 +49165,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -48984,12 +49960,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -49072,6 +50042,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphenate-limit-chars",
         "url": "https://www.caniemail.com/features/css-hyphenate-limit-chars/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -49840,12 +50816,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -49916,6 +50886,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphenate-limit-chars",
         "url": "https://www.caniemail.com/features/css-hyphenate-limit-chars/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -50546,24 +51522,6 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "font-stretch",
         "url": "https://www.caniemail.com/features/css-font-stretch/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "clamp()",
-        "url": "https://www.caniemail.com/features/css-function-clamp/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "max()",
-        "url": "https://www.caniemail.com/features/css-function-max/",
-      },
-      {
-        "notes": [],
-        "support": "none",
-        "title": "min()",
-        "url": "https://www.caniemail.com/features/css-function-min/",
       },
       {
         "notes": [],
@@ -52304,6 +53262,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -52692,6 +53656,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -52880,6 +53850,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "text-decoration",
         "url": "https://www.caniemail.com/features/css-text-decoration/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "text-justify",
+        "url": "https://www.caniemail.com/features/css-text-justify/",
       },
       {
         "notes": [],
@@ -53106,6 +54082,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":checked",
         "url": "https://www.caniemail.com/features/css-pseudo-class-checked/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
       },
       {
         "notes": [],
@@ -54976,12 +55958,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -55026,6 +56002,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -55178,6 +56160,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -55186,6 +56174,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -55764,12 +56764,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -55814,6 +56808,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -55964,6 +56964,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -55972,6 +56978,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -56557,12 +57575,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -56613,6 +57625,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -56765,6 +57783,12 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
+        "title": ":default",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-default/",
+      },
+      {
+        "notes": [],
+        "support": "none",
         "title": ":first-child",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-child/",
       },
@@ -56773,6 +57797,18 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": ":first-of-type",
         "url": "https://www.caniemail.com/features/css-pseudo-class-first-of-type/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-visible",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-visible/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": ":focus-within",
+        "url": "https://www.caniemail.com/features/css-pseudo-class-focus-within/",
       },
       {
         "notes": [],
@@ -57336,12 +58372,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "filter",
         "url": "https://www.caniemail.com/features/css-filter/",
       },
@@ -57430,6 +58460,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -58192,12 +59228,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -58292,6 +59322,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],
@@ -59080,12 +60116,6 @@ exports[`all features > getAllFeatures() 2`] = `
       {
         "notes": [],
         "support": "none",
-        "title": "display:grid",
-        "url": "https://www.caniemail.com/features/css-display-grid/",
-      },
-      {
-        "notes": [],
-        "support": "none",
         "title": "empty-cells",
         "url": "https://www.caniemail.com/features/css-empty-cells/",
       },
@@ -59174,6 +60204,12 @@ exports[`all features > getAllFeatures() 2`] = `
         "support": "none",
         "title": "hyphens",
         "url": "https://www.caniemail.com/features/css-hyphens/",
+      },
+      {
+        "notes": [],
+        "support": "none",
+        "title": "inert",
+        "url": "https://www.caniemail.com/features/css-inert-attribute/",
       },
       {
         "notes": [],

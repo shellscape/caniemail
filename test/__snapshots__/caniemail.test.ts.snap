@@ -1948,6 +1948,24 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Doesn't support the \`match-parent\` value.",
+            "Supports the vendor prefixed value \`-webkit-match-parent\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-align",
+        },
+        {
+          "notes": [
             "Partial. Negative values are not supported.",
           ],
           "position": {
@@ -3222,6 +3240,7 @@ exports[`check() file > fixture html file 1`] = `
         {
           "notes": [
             "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+            "Partial. Doesn't support the \`match-parent\` value.",
           ],
           "position": {
             "end": {
@@ -4799,6 +4818,7 @@ exports[`check() file > fixture html file 1`] = `
         {
           "notes": [
             "Partial. Flow-relative values \`start\` and \`end\` are not supported.",
+            "Partial. Doesn't support the \`match-parent\` value.",
           ],
           "position": {
             "end": {
@@ -6254,23 +6274,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Flow-relative values \`start\` and \`end\` are not supported with non Gmail account.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "text-align",
-        },
-        {
-          "notes": [
             "Partial. Not supported with non Google accounts.",
           ],
           "position": {
@@ -6937,7 +6940,8 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Flow-relative values \`start\` and \`end\` are not supported with non Gmail account.",
+            "Partial. Doesn't support the \`match-parent\` value.",
+            "Supports the vendor prefixed value \`-webkit-match-parent\`.",
           ],
           "position": {
             "end": {
@@ -7942,6 +7946,23 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Doesn't support the \`match-parent\` value.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-align",
         },
         {
           "notes": [
@@ -9971,36 +9992,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "align attribute",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10016,36 +10007,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "align attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
         {
           "notes": [
@@ -10082,36 +10043,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "align attribute",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10127,36 +10058,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "align attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
         {
           "notes": [
@@ -10176,96 +10077,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "align attribute",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10281,66 +10092,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "align attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
         {
           "notes": [
@@ -10360,21 +10111,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "align attribute",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10392,171 +10128,6 @@ exports[`check() file > fixture html file 1`] = `
           "title": "align attribute",
         },
         {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 351,
-            },
-            "start": {
-              "column": 25,
-              "line": 348,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
           "notes": [
             "Partial. \`<img>\` elements are wrapped in a \`<span>\` so \`left\` and \`right\` values have no effect.",
           ],
@@ -10572,36 +10143,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "align attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
       ],
       "protonmail.ios" => [
@@ -10621,486 +10162,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "overflow",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 351,
-            },
-            "start": {
-              "column": 25,
-              "line": 348,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
       ],
       "protonmail.android" => [
@@ -11126,96 +10187,6 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 12,
-              "line": 374,
-            },
-            "start": {
-              "column": 5,
-              "line": 43,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 98,
-            },
-            "start": {
-              "column": 25,
-              "line": 72,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
               "column": 34,
               "line": 94,
             },
@@ -11231,36 +10202,6 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 126,
-            },
-            "start": {
-              "column": 25,
-              "line": 99,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
               "column": 34,
               "line": 122,
             },
@@ -11271,366 +10212,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "<img> element",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 253,
-            },
-            "start": {
-              "column": 25,
-              "line": 127,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 195,
-            },
-            "start": {
-              "column": 33,
-              "line": 184,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 40,
-              "line": 249,
-            },
-            "start": {
-              "column": 33,
-              "line": 196,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 368,
-            },
-            "start": {
-              "column": 17,
-              "line": 267,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 351,
-            },
-            "start": {
-              "column": 25,
-              "line": 348,
-            },
-          },
-          "support": "partial",
-          "title": "font-size",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellpadding attribute",
-        },
-        {
-          "notes": [],
-          "position": {
-            "end": {
-              "column": 32,
-              "line": 364,
-            },
-            "start": {
-              "column": 25,
-              "line": 353,
-            },
-          },
-          "support": "partial",
-          "title": "cellspacing attribute",
         },
       ],
     },
