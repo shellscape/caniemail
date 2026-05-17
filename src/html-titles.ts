@@ -1,8 +1,10 @@
 import { getFeatures } from './features.js';
 import { fromTitleEntries, getTitleMatches } from './helpers.js';
 
-const features = getFeatures().html;
+const { html: features, others } = getFeatures();
 const keys = [...features.keys()];
+const otherHtmlDetectedTitles = ['AMP for Email'].filter((title) => others.has(title));
+keys.push(...otherHtmlDetectedTitles);
 
 export const attributeTitles = fromTitleEntries<string[]>(
   keys.map((title) => {
@@ -44,6 +46,16 @@ export const elementAttributePairTitles = fromTitleEntries<{
         value: {
           attributes: [['href', /^mailto:/]],
           element: 'a'
+        }
+      };
+    }
+
+    if (title === 'color-scheme meta tag') {
+      return {
+        title,
+        value: {
+          attributes: [['name', 'color-scheme']],
+          element: 'meta'
         }
       };
     }

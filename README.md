@@ -86,13 +86,29 @@ Possible email clients:
   'sfr.ios',
   'sfr.android',
   'thunderbird.macos',
+  'thunderbird.windows',
   'protonmail.desktop-webmail',
   'protonmail.ios',
   'protonmail.android',
   'hey.desktop-webmail',
   'mail-ru.desktop-webmail',
   'fastmail.desktop-webmail',
-  'laposte.desktop-webmail'
+  'laposte.desktop-webmail',
+  'laposte.ios',
+  'laposte.android',
+  'free-fr.desktop-webmail',
+  'gmx.desktop-webmail',
+  'gmx.ios',
+  'gmx.android',
+  'ionos-1and1.desktop-webmail',
+  'ionos-1and1.android',
+  'outlook.outlook-com',
+  'rainloop.desktop-webmail',
+  't-online-de.desktop-webmail',
+  'web-de.desktop-webmail',
+  'web-de.ios',
+  'web-de.android',
+  'wp-pl.desktop-webmail'
 ];
 ```
 

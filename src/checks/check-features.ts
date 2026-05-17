@@ -27,9 +27,9 @@ export const checkFeatures = ({ clients, issues, titles, position }: CheckFeatur
       }
 
       const supportStatus = getSupportType(supportMap);
-      const notes = (supportStatus.noteNumbers ?? []).map(
-        (noteNumber) => feature.notes_by_num![String(noteNumber)]
-      );
+      const notes = (supportStatus.noteNumbers ?? [])
+        .map((noteNumber) => feature.notes_by_num?.[String(noteNumber)])
+        .filter((note) => note !== undefined);
       const support = supportStatus.type;
 
       const issue: FeatureIssue = {

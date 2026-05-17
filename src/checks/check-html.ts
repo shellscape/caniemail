@@ -7,6 +7,7 @@ import {
   getMatchingElementAttributePairTitles,
   getMatchingElementTitles
 } from '../html-titles.js';
+import { getMatchingImageTitles, getUrlsFromSrcset } from '../image-titles.js';
 import { LocationIndex } from '../location.js';
 
 import { type BaseCheckArgs } from './check-base.js';
@@ -49,6 +50,21 @@ const checkHtmlNode = ({
     checkFeatures({ clients, issues, titles: attributeTitles, position });
     checkFeatures({ clients, issues, titles: elementAttributePairTitles, position });
 
+    const attributeMap = Object.fromEntries(node.attributes.map((attr) => [attr.name, attr.value]));
+    const imageUrls: string[] = [];
+    if (node.tagName === 'img' && attributeMap.src) imageUrls.push(attributeMap.src);
+    if (node.tagName === 'source' && attributeMap.srcset) {
+      imageUrls.push(...getUrlsFromSrcset(attributeMap.srcset));
+    }
+    if (attributeMap.srcset) imageUrls.push(...getUrlsFromSrcset(attributeMap.srcset));
+
+    checkFeatures({
+      clients,
+      issues,
+      titles: getMatchingImageTitles({ urls: imageUrls }),
+      position
+    });
+
     const styleAttr = node.attributes.find((attr) => attr.name === 'style');
     if (styleAttr !== void 0) {
       const styleObject = ((styleToObject as any).default ?? styleToObject)(styleAttr.value);
@@ -76,6 +92,12 @@ const checkHtmlNode = ({
     for (const childNode of node.childNodes) {
       if (childNode.type === ElementType.Tag || childNode.type === ElementType.Style) {
         checkHtmlNode({ clients, issues, node: childNode as Element, locationIndex });
+      } else if (childNode.type === ElementType.Comment) {
+        const position =
+          childNode.startIndex !== null && childNode.endIndex !== null
+            ? locationIndex.positionOf(childNode.startIndex, childNode.endIndex)
+            : undefined;
+        checkFeatures({ clients, issues, titles: ['HTML comments'], position });
       }
     }
   }
@@ -87,6 +109,12 @@ export const checkHtml = ({ clients, issues, document, source }: CheckHtmlArgs) 
   for (const childNode of document.childNodes) {
     if (childNode.type === ElementType.Tag) {
       checkHtmlNode({ clients, issues, node: childNode as Element, locationIndex });
+    } else if (childNode.type === ElementType.Comment) {
+      const position =
+        childNode.startIndex !== null && childNode.endIndex !== null
+          ? locationIndex.positionOf(childNode.startIndex, childNode.endIndex)
+          : undefined;
+      checkFeatures({ clients, issues, titles: ['HTML comments'], position });
     }
   }
 };

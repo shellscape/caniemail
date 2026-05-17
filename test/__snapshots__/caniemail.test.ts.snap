@@ -1262,6 +1262,21 @@ exports[`check() file > fixture html file 1`] = `
             },
           },
           "support": "none",
+          "title": "max-height property",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "none",
           "title": "opacity",
         },
         {
@@ -1377,6 +1392,21 @@ exports[`check() file > fixture html file 1`] = `
         },
       ],
       "outlook.windows-mail" => [
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "none",
+          "title": "max-height property",
+        },
         {
           "notes": [],
           "position": {
@@ -1829,6 +1859,23 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
             "Partial. Replaced by a \`<div>\` with supported attributes.",
           ],
           "position": {
@@ -2102,6 +2149,23 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
             "Partial. Replaced by a \`<div>\` with supported attributes.",
           ],
           "position": {
@@ -2191,23 +2255,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -2239,23 +2286,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "max-width",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "width property",
         },
         {
           "notes": [
@@ -2294,6 +2324,23 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 370,
+            },
+            "start": {
+              "column": 13,
+              "line": 55,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+        {
+          "notes": [
             "Partial. Negative values are not supported.",
             "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
             "Buggy. \`background-color\` is included inside the \`margin\`.",
@@ -2328,23 +2375,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "max-width",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "width property",
         },
         {
           "notes": [
@@ -2383,23 +2413,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "width property",
-        },
-        {
-          "notes": [
             "Partial. Negative values are not supported.",
             "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
             "Buggy. \`background-color\` is included inside the \`margin\`.",
@@ -2435,6 +2448,40 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "padding",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 25,
+              "line": 255,
+            },
+            "start": {
+              "column": 21,
+              "line": 70,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
         {
           "notes": [
@@ -2674,6 +2721,26 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Negative values are not supported.",
+            "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
+            "Buggy. \`background-color\` is included inside the \`margin\`.",
+            "Partial. \`auto\` value is not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
             "Partial. A border can not be bigger than 8px.",
             "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
           ],
@@ -2710,6 +2777,24 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Only supported on table cells.",
+            "Buggy. Vertical padding will be the same for all cells of a same row, adopting the biggest value.",
+          ],
+          "position": {
+            "end": {
+              "column": 32,
+              "line": 253,
+            },
+            "start": {
+              "column": 25,
+              "line": 127,
+            },
+          },
+          "support": "partial",
+          "title": "padding",
+        },
+        {
+          "notes": [
             "Partial support. \`rem\` values are not supported.",
           ],
           "position": {
@@ -2724,23 +2809,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
         },
         {
           "notes": [
@@ -2812,23 +2880,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
         },
         {
           "notes": [
@@ -2939,23 +2990,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3010,23 +3044,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3064,6 +3081,24 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Only supported on table cells.",
+            "Buggy. Vertical padding will be the same for all cells of a same row, adopting the biggest value.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "padding",
+        },
+        {
+          "notes": [
             "Buggy. Percentage width on \`<img>\` elements are based on the physical file's width, not on the parent element's width.",
             "Buggy. Sizes set in attributes don't scale in 120 dpi mode.",
           ],
@@ -3079,6 +3114,40 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "width attribute",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 65,
+              "line": 193,
+            },
+            "start": {
+              "column": 37,
+              "line": 193,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
         {
           "notes": [
@@ -3171,23 +3240,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3219,23 +3271,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "max-width",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "width property",
         },
         {
           "notes": [
@@ -3275,6 +3310,23 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+        {
+          "notes": [
             "Partial. Only \`background-color\` values are supported.",
           ],
           "position": {
@@ -3289,6 +3341,59 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "background",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
         {
           "notes": [
@@ -3365,23 +3470,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3453,23 +3541,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3542,23 +3613,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3608,23 +3662,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
         },
         {
           "notes": [
@@ -3700,23 +3737,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3766,23 +3786,6 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "font-size",
-        },
-        {
-          "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
         },
         {
           "notes": [
@@ -3858,23 +3861,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3907,6 +3893,59 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
         {
           "notes": [
@@ -3965,23 +4004,6 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
-            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\` or \`<p>\` elements.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "height property",
-        },
-        {
-          "notes": [
             "Buggy. \`em\` and \`px\` units behave weirdly. Use \`mso-line-height-rule:exactly\`.",
           ],
           "position": {
@@ -3996,6 +4018,26 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "line-height",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+            "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
+            "Buggy. \`background-color\` is included inside the \`margin\`.",
+            "Partial. \`auto\` value is not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
         },
         {
           "notes": [
@@ -4069,6 +4111,40 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "width attribute",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 57,
+              "line": 362,
+            },
+            "start": {
+              "column": 29,
+              "line": 362,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
       ],
       "outlook.windows-mail" => [
@@ -4412,6 +4488,25 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Negative values are not supported.",
+            "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
+            "Buggy. \`background-color\` is included inside the \`margin\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
             "Partial. A border can not be bigger than 8px.",
             "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
           ],
@@ -4427,6 +4522,24 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. Only supported on table cells.",
+            "Buggy. Vertical padding will be the same for all cells of a same row, adopting the biggest value.",
+          ],
+          "position": {
+            "end": {
+              "column": 32,
+              "line": 253,
+            },
+            "start": {
+              "column": 25,
+              "line": 127,
+            },
+          },
+          "support": "partial",
+          "title": "padding",
         },
         {
           "notes": [
@@ -4712,6 +4825,24 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Only supported on table cells.",
+            "Buggy. Vertical padding will be the same for all cells of a same row, adopting the biggest value.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "padding",
+        },
+        {
+          "notes": [
             "Partial. A border can not be bigger than 8px.",
             "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
           ],
@@ -4867,6 +4998,42 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "background",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "border",
         },
         {
           "notes": [
@@ -5364,6 +5531,42 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
+            "Partial. A border can not be bigger than 8px.",
+            "Buggy. Unreliable if used on a \`<p>\` or a \`<div>\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "border",
+        },
+        {
+          "notes": [
             "Partial. Negative values are not supported.",
             "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
             "Buggy. \`background-color\` is included inside the \`margin\`.",
@@ -5436,6 +5639,25 @@ exports[`check() file > fixture html file 1`] = `
         },
         {
           "notes": [
+            "Partial. Negative values are not supported.",
+            "Partial. Not supported on \`<span>\` and \`<body>\` elements.",
+            "Buggy. \`background-color\` is included inside the \`margin\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
             "Partial. Not supported with multiple values.",
             "Partial. \`overline\` is not supported.",
           ],
@@ -5470,2655 +5692,22 @@ exports[`check() file > fixture html file 1`] = `
           "title": "font-size",
         },
       ],
-      "gmail.desktop-webmail" => [
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-      ],
-      "gmail.ios" => [
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 94,
-            },
-            "start": {
-              "column": 33,
-              "line": 83,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 94,
-            },
-            "start": {
-              "column": 33,
-              "line": 83,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 351,
-            },
-            "start": {
-              "column": 25,
-              "line": 348,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-      ],
-      "gmail.android" => [
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Buggy. Cannot scroll through to hidden content.",
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 94,
-            },
-            "start": {
-              "column": 33,
-              "line": 83,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 94,
-            },
-            "start": {
-              "column": 33,
-              "line": 83,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Doesn't support the \`match-parent\` value.",
-            "Supports the vendor prefixed value \`-webkit-match-parent\`.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "text-align",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 299,
-            },
-            "start": {
-              "column": 27,
-              "line": 290,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 58,
-              "line": 312,
-            },
-            "start": {
-              "column": 27,
-              "line": 303,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 68,
-              "line": 325,
-            },
-            "start": {
-              "column": 27,
-              "line": 316,
-            },
-          },
-          "support": "partial",
-          "title": "display",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Not supported with non Google accounts.",
-          ],
-          "position": {
-            "end": {
-              "column": 53,
-              "line": 351,
-            },
-            "start": {
-              "column": 25,
-              "line": 348,
-            },
-          },
-          "support": "partial",
-          "title": "text-decoration",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-      ],
-      "outlook.ios" => [
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-      ],
-      "outlook.android" => [
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 9,
-              "line": 376,
-            },
-            "start": {
-              "column": 3,
-              "line": 24,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Buggy. Cannot scroll through to hidden content.",
-            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 10,
-              "line": 42,
-            },
-            "start": {
-              "column": 5,
-              "line": 27,
-            },
-          },
-          "support": "partial",
-          "title": "overflow",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 14,
-              "line": 373,
-            },
-            "start": {
-              "column": 7,
-              "line": 52,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 20,
-              "line": 369,
-            },
-            "start": {
-              "column": 15,
-              "line": 56,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 24,
-              "line": 257,
-            },
-            "start": {
-              "column": 17,
-              "line": 60,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 256,
-            },
-            "start": {
-              "column": 19,
-              "line": 69,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 97,
-            },
-            "start": {
-              "column": 27,
-              "line": 80,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 125,
-            },
-            "start": {
-              "column": 27,
-              "line": 107,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 122,
-            },
-            "start": {
-              "column": 33,
-              "line": 110,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 252,
-            },
-            "start": {
-              "column": 27,
-              "line": 136,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 149,
-            },
-            "start": {
-              "column": 33,
-              "line": 139,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 37,
-              "line": 160,
-            },
-            "start": {
-              "column": 33,
-              "line": 150,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 171,
-            },
-            "start": {
-              "column": 33,
-              "line": 161,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 36,
-              "line": 183,
-            },
-            "start": {
-              "column": 33,
-              "line": 172,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 194,
-            },
-            "start": {
-              "column": 35,
-              "line": 192,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 42,
-              "line": 248,
-            },
-            "start": {
-              "column": 35,
-              "line": 204,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Doesn't support the \`match-parent\` value.",
-          ],
-          "position": {
-            "end": {
-              "column": 63,
-              "line": 244,
-            },
-            "start": {
-              "column": 1,
-              "line": 228,
-            },
-          },
-          "support": "partial",
-          "title": "text-align",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 18,
-              "line": 266,
-            },
-            "start": {
-              "column": 17,
-              "line": 258,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 367,
-            },
-            "start": {
-              "column": 19,
-              "line": 275,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 288,
-            },
-            "start": {
-              "column": 25,
-              "line": 278,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 301,
-            },
-            "start": {
-              "column": 25,
-              "line": 289,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 314,
-            },
-            "start": {
-              "column": 25,
-              "line": 302,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 327,
-            },
-            "start": {
-              "column": 25,
-              "line": 315,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 26,
-              "line": 336,
-            },
-            "start": {
-              "column": 25,
-              "line": 328,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Negative values are not supported.",
-          ],
-          "position": {
-            "end": {
-              "column": 28,
-              "line": 347,
-            },
-            "start": {
-              "column": 25,
-              "line": 337,
-            },
-          },
-          "support": "partial",
-          "title": "margin",
-        },
-        {
-          "notes": [
-            "Partial. Replaced by a \`<div>\` with supported attributes.",
-          ],
-          "position": {
-            "end": {
-              "column": 34,
-              "line": 363,
-            },
-            "start": {
-              "column": 27,
-              "line": 361,
-            },
-          },
-          "support": "partial",
-          "title": "<body> element",
-        },
-      ],
       "hey.desktop-webmail" => [
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 22,
+            },
+            "start": {
+              "column": 5,
+              "line": 16,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
+        },
         {
           "notes": [
             "Partial. Replaced by a \`<div>\` with supported attributes.",
@@ -8214,6 +5803,21 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "table-layout",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 59,
+            },
+            "start": {
+              "column": 21,
+              "line": 58,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
         },
         {
           "notes": [
@@ -8695,6 +6299,21 @@ exports[`check() file > fixture html file 1`] = `
           "notes": [],
           "position": {
             "end": {
+              "column": 54,
+              "line": 227,
+            },
+            "start": {
+              "column": 44,
+              "line": 208,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
               "column": 63,
               "line": 244,
             },
@@ -8999,8 +6618,38 @@ exports[`check() file > fixture html file 1`] = `
           "support": "partial",
           "title": "<body> element",
         },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 54,
+              "line": 375,
+            },
+            "start": {
+              "column": 12,
+              "line": 375,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
+        },
       ],
       "fastmail.desktop-webmail" => [
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 22,
+            },
+            "start": {
+              "column": 5,
+              "line": 16,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
+        },
         {
           "notes": [
             "Partial. Two-value syntax are combined into a single one with a dash.",
@@ -9062,6 +6711,21 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "table-layout",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 59,
+            },
+            "start": {
+              "column": 21,
+              "line": 58,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
         },
         {
           "notes": [],
@@ -9351,6 +7015,21 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "border-collapse",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 54,
+              "line": 227,
+            },
+            "start": {
+              "column": 44,
+              "line": 208,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
         },
         {
           "notes": [
@@ -9659,6 +7338,3300 @@ exports[`check() file > fixture html file 1`] = `
           },
           "support": "partial",
           "title": "cellspacing attribute",
+        },
+        {
+          "notes": [],
+          "position": {
+            "end": {
+              "column": 54,
+              "line": 375,
+            },
+            "start": {
+              "column": 12,
+              "line": 375,
+            },
+          },
+          "support": "partial",
+          "title": "HTML comments",
+        },
+      ],
+      "gmail.desktop-webmail" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "gmail.ios" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 94,
+            },
+            "start": {
+              "column": 33,
+              "line": 83,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 94,
+            },
+            "start": {
+              "column": 33,
+              "line": 83,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 299,
+            },
+            "start": {
+              "column": 27,
+              "line": 290,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 299,
+            },
+            "start": {
+              "column": 27,
+              "line": 290,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 58,
+              "line": 312,
+            },
+            "start": {
+              "column": 27,
+              "line": 303,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 58,
+              "line": 312,
+            },
+            "start": {
+              "column": 27,
+              "line": 303,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 68,
+              "line": 325,
+            },
+            "start": {
+              "column": 27,
+              "line": 316,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 68,
+              "line": 325,
+            },
+            "start": {
+              "column": 27,
+              "line": 316,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 351,
+            },
+            "start": {
+              "column": 25,
+              "line": 348,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "gmail.android" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Buggy. Cannot scroll through to hidden content.",
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 94,
+            },
+            "start": {
+              "column": 33,
+              "line": 83,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 94,
+            },
+            "start": {
+              "column": 33,
+              "line": 83,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Doesn't support the \`match-parent\` value.",
+            "Supports the vendor prefixed value \`-webkit-match-parent\`.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-align",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 299,
+            },
+            "start": {
+              "column": 27,
+              "line": 290,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 299,
+            },
+            "start": {
+              "column": 27,
+              "line": 290,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 58,
+              "line": 312,
+            },
+            "start": {
+              "column": 27,
+              "line": 303,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 58,
+              "line": 312,
+            },
+            "start": {
+              "column": 27,
+              "line": 303,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 68,
+              "line": 325,
+            },
+            "start": {
+              "column": 27,
+              "line": 316,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. \`flex\`, \`grid\`, \`flow-root\`, \`contents\`, \`inline flow-root\`, \`inline flex\`, \`inline grid\`, \`initial\`, \`revert\`, \`unset\` are not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 68,
+              "line": 325,
+            },
+            "start": {
+              "column": 27,
+              "line": 316,
+            },
+          },
+          "support": "partial",
+          "title": "display",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Not supported with non Google accounts.",
+          ],
+          "position": {
+            "end": {
+              "column": 53,
+              "line": 351,
+            },
+            "start": {
+              "column": 25,
+              "line": 348,
+            },
+          },
+          "support": "partial",
+          "title": "text-decoration",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "outlook.ios" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "outlook.android" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Buggy. Cannot scroll through to hidden content.",
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Doesn't support the \`match-parent\` value.",
+          ],
+          "position": {
+            "end": {
+              "column": 63,
+              "line": 244,
+            },
+            "start": {
+              "column": 1,
+              "line": 228,
+            },
+          },
+          "support": "partial",
+          "title": "text-align",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+      ],
+      "outlook.outlook-com" => [
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 9,
+              "line": 376,
+            },
+            "start": {
+              "column": 3,
+              "line": 24,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. \`overflow-block\` & \`overflow-inline\` not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 10,
+              "line": 42,
+            },
+            "start": {
+              "column": 5,
+              "line": 27,
+            },
+          },
+          "support": "partial",
+          "title": "overflow",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 14,
+              "line": 373,
+            },
+            "start": {
+              "column": 7,
+              "line": 52,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 20,
+              "line": 369,
+            },
+            "start": {
+              "column": 15,
+              "line": 56,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 24,
+              "line": 257,
+            },
+            "start": {
+              "column": 17,
+              "line": 60,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 256,
+            },
+            "start": {
+              "column": 19,
+              "line": 69,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 97,
+            },
+            "start": {
+              "column": 27,
+              "line": 80,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 125,
+            },
+            "start": {
+              "column": 27,
+              "line": 107,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 122,
+            },
+            "start": {
+              "column": 33,
+              "line": 110,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 252,
+            },
+            "start": {
+              "column": 27,
+              "line": 136,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 149,
+            },
+            "start": {
+              "column": 33,
+              "line": 139,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 37,
+              "line": 160,
+            },
+            "start": {
+              "column": 33,
+              "line": 150,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 171,
+            },
+            "start": {
+              "column": 33,
+              "line": 161,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 36,
+              "line": 183,
+            },
+            "start": {
+              "column": 33,
+              "line": 172,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 194,
+            },
+            "start": {
+              "column": 35,
+              "line": 192,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 42,
+              "line": 248,
+            },
+            "start": {
+              "column": 35,
+              "line": 204,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 18,
+              "line": 266,
+            },
+            "start": {
+              "column": 17,
+              "line": 258,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 367,
+            },
+            "start": {
+              "column": 19,
+              "line": 275,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 288,
+            },
+            "start": {
+              "column": 25,
+              "line": 278,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 301,
+            },
+            "start": {
+              "column": 25,
+              "line": 289,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 314,
+            },
+            "start": {
+              "column": 25,
+              "line": 302,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 327,
+            },
+            "start": {
+              "column": 25,
+              "line": 315,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 26,
+              "line": 336,
+            },
+            "start": {
+              "column": 25,
+              "line": 328,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Negative values are not supported.",
+          ],
+          "position": {
+            "end": {
+              "column": 28,
+              "line": 347,
+            },
+            "start": {
+              "column": 25,
+              "line": 337,
+            },
+          },
+          "support": "partial",
+          "title": "margin",
+        },
+        {
+          "notes": [
+            "Partial. Replaced by a \`<div>\` with supported attributes.",
+          ],
+          "position": {
+            "end": {
+              "column": 34,
+              "line": 363,
+            },
+            "start": {
+              "column": 27,
+              "line": 361,
+            },
+          },
+          "support": "partial",
+          "title": "<body> element",
         },
       ],
       "apple-mail.ios" => [
@@ -10243,7 +11216,28 @@ exports[`check() works > checks content with rem unit 1`] = `
         },
       ],
     },
-    "warnings": Map {},
+    "warnings": Map {
+      "outlook.windows" => [
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 19,
+              "line": 2,
+            },
+            "source": "",
+            "start": {
+              "column": 8,
+              "line": 2,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
+        },
+      ],
+    },
   },
   "success": false,
 }
@@ -10338,6 +11332,24 @@ exports[`check() works > parses CSS 1`] = `
           },
           "support": "partial",
           "title": "background",
+        },
+        {
+          "notes": [
+            "Partial. Not supported on \`<body>\`, \`<span>\`, \`<div>\`, \`<p>\` or \`<img>\` elements.",
+          ],
+          "position": {
+            "end": {
+              "column": 46,
+              "line": 1,
+            },
+            "source": "",
+            "start": {
+              "column": 35,
+              "line": 1,
+            },
+          },
+          "support": "partial",
+          "title": "width property",
         },
       ],
       "gmail.ios" => [

@@ -69,7 +69,7 @@ export const groupIssues = (issues: FeatureMap<FeatureIssue>): IssueGroup[] => {
   return Array.from(groupedIssues.values());
 };
 
-export const parseCss = (cssContent: string) => css.parse(cssContent);
+export const parseCss = (cssContent: string) => css.parse(cssContent, { silent: true });
 
 export const parseHtml = (html: string): ParseHtmlResult => {
   const document = htmlparser.parseDocument(html, { withStartIndices: true, withEndIndices: true });
