@@ -1,0 +1,11 @@
+packages:
+  - '.'
+
+allowBuilds:
+  esbuild: true
+
+enablePrePostScripts: true
+linkWorkspacePackages: false
+shamefullyHoist: true
+sharedWorkspaceLockfile: true
+strictPeerDependencies: false

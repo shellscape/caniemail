@@ -9,9 +9,9 @@ on:
       - '*-v*'
 
 permissions:
+  # Jobs requiring OIDC (e.g., npm publish) must request `id-token: write` at the job level.
   contents: read
   pages: write
-  id-token: write
 
 jobs:
   release:
@@ -19,17 +19,21 @@ jobs:
       !startsWith(github.event.head_commit.message, 'chore(release):') &&
       !startsWith(github.event.head_commit.message, 'chore(repo):')
 
+    permissions:
+      # Required for `versioner` to push release commits/tags and for npm OIDC publish.
+      contents: write
+      id-token: write
+
     runs-on: ubuntu-latest
 
     name: release
 
     steps:
-      - name: Checkout Branch
+      - name: Checkout Commit
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 100
           fetch-tags: true
-          # Note!!! This overrides whatever branch you select with workflow_dispatch. Comment this out to test with other branches.
           ref: main
           token: ${{ secrets.GH_RELEASE_TOKEN }}
 
@@ -42,7 +46,7 @@ jobs:
           git config pull.rebase false
           git config --global user.email "release-workflow@caniemail.com"
           git config --global user.name "Release Workflow"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_RELEASE_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://github.com/${{ github.repository }}
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -52,14 +56,20 @@ jobs:
           pnpm build
           pnpm test
 
+      - name: OIDC Preflight
+        shell: bash
+        run: |
+          if [ -z "${ACTIONS_ID_TOKEN_REQUEST_URL:-}" ] || [ -z "${ACTIONS_ID_TOKEN_REQUEST_TOKEN:-}" ]; then
+            echo "Missing GitHub Actions OIDC env vars (ACTIONS_ID_TOKEN_REQUEST_URL/TOKEN)." >&2
+            echo "Ensure the job requests permissions: id-token: write." >&2
+            exit 1
+          fi
+
+          echo "OIDC env vars detected."
+
       - name: Release
         run: |
           git config --global user.email
           git config --global user.name
           git remote get-url origin
-          git commit -am "chore(repo): test commit from workflow" --allow-empty
-          git push origin HEAD:main
           pnpm release
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
